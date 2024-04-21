@@ -9,16 +9,6 @@ variable "description" {
   description = "The description of the repository"
 }
 
-variable "gitignore_template" {
-  type        = string
-  description = "The gitignore template of the repository"
-}
-
-variable "license_template" {
-  type        = string
-  description = "The license template of the repository"
-}
-
 variable "name" {
   type        = string
   description = "The name of the repository"
@@ -32,4 +22,25 @@ variable "name" {
 variable "visibility" {
   type        = string
   description = "The visibility of the repository"
+}
+
+variable "options" {
+  type = object({
+    gitignore_template = optional(string)
+    has_downloads      = optional(bool, true)
+    has_projects       = optional(bool, true)
+    has_wiki           = optional(bool, true)
+    license_template   = optional(string)
+  })
+
+  default = {
+    gitignore_template = null
+    has_downloads      = true
+    has_projects       = true
+    has_wiki           = true
+    license_template   = null
+  }
+
+  description = "Optional options for the repository"
+  nullable    = false
 }

@@ -11,8 +11,21 @@ variable "github_repositories" {
     name                             = string
     description                      = optional(string, null)
     visibility                       = optional(string, "public")
-    gitignore_template               = optional(string, null)
-    license_template                 = optional(string, null)
     create_terraform_cloud_workspace = optional(bool, false)
+
+    options = optional(object({
+      gitignore_template = optional(string)
+      has_downloads      = optional(bool)
+      has_projects       = optional(bool)
+      has_wiki           = optional(bool)
+      license_template   = optional(string)
+    }))
   }))
+}
+
+variable "github_token" {
+  description = "GitHub token for authentication"
+  type        = string
+  sensitive   = true
+}
 }

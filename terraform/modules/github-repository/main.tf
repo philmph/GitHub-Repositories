@@ -1,17 +1,22 @@
 locals {
-  name               = var.name
-  description        = var.description
-  visibility         = var.visibility
-  gitignore_template = var.gitignore_template
-  license_template   = var.license_template
-  archived           = var.archived
+  name        = var.name
+  description = var.description
+  visibility  = var.visibility
+  archived    = var.archived
+
+  options = var.options
 }
 
 resource "github_repository" "this" {
-  name               = local.name
-  description        = local.description
-  visibility         = local.visibility
-  gitignore_template = local.gitignore_template
-  license_template   = local.license_template
-  archived           = local.archived
+  name        = local.name
+  description = local.description
+  visibility  = local.visibility
+  archived    = local.archived
+
+  # Optional settings
+  gitignore_template = local.options.gitignore_template
+  has_downloads      = local.options.has_downloads
+  has_projects       = local.options.has_projects
+  has_wiki           = local.options.has_wiki
+  license_template   = local.options.license_template
 }
