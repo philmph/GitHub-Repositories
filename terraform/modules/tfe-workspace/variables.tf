@@ -29,7 +29,6 @@ variable "workspace_name" {
 
 variable "workspace_working_directory" {
   description = "Path to the TFE workspaces working directory"
-  default     = ""
-  nullable    = false
+  default     = null
   type        = string
 }
