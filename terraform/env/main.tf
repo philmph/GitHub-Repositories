@@ -1,9 +1,3 @@
-locals {
-  github_token        = var.github_token
-  github_repositories = var.github_repositories
-  tfe_token           = var.tfe_token
-}
-
 module "github_repository" {
   source = "../modules/github-repository"
 
