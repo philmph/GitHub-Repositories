@@ -15,6 +15,12 @@ variable "workspace_description" {
   type        = string
 }
 
+variable "workspace_execution_mode" {
+  description = "Execution mode of the TFE workspace"
+  default     = "local"
+  type        = string
+}
+
 variable "workspace_name" {
   description = "Name of the TFE workspace"
   type        = string

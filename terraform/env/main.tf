@@ -19,4 +19,6 @@ module "tfe_workspace" {
   organization          = var.tfe_organization
   workspace_description = each.value.description
   workspace_name        = each.value.name
+
+  workspace_execution_mode = each.value.terraform_cloud_options.workspace_execution_mode
 }

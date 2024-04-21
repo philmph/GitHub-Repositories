@@ -15,4 +15,8 @@ resource "tfe_workspace" "this" {
   #     }
 }
 
+resource "tfe_workspace_settings" "this" {
+  workspace_id = tfe_workspace.this.id
+
+  execution_mode = local.workspace_execution_mode
 }
