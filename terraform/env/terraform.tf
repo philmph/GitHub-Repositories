@@ -12,4 +12,13 @@ terraform {
       version = "= 0.53.0"
     }
   }
+
+  # TODO Research: Can this be dynamic?
+  cloud {
+    organization = "philmph"
+
+    workspaces {
+      name = "GitHub-Repositories"
+    }
+  }
 }
