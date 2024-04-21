@@ -18,6 +18,7 @@ variable "workspace_description" {
 variable "workspace_execution_mode" {
   description = "Execution mode of the TFE workspace"
   default     = "local"
+  nullable    = false
   type        = string
 }
 
@@ -28,6 +29,7 @@ variable "workspace_name" {
 
 variable "workspace_working_directory" {
   description = "Path to the TFE workspaces working directory"
-  default     = null
+  default     = ""
+  nullable    = false
   type        = string
 }
