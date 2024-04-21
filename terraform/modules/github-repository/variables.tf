@@ -6,6 +6,7 @@ variable "archived" {
 
 variable "description" {
   type        = string
+  default     = null
   description = "The description of the repository"
 }
 
@@ -21,6 +22,7 @@ variable "name" {
 
 variable "visibility" {
   type        = string
+  default     = "public"
   description = "The visibility of the repository"
 }
 

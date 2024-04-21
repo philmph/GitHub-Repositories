@@ -1,13 +1,13 @@
 variable "github_repositories" {
   description = "A list of GitHub repositories to create"
   type = list(object({
-    archived                         = optional(bool, false)
-    name                             = string
-    description                      = optional(string, null)
-    visibility                       = optional(string, "public")
-    create_terraform_cloud_workspace = optional(bool, false)
+    archived    = optional(bool)
+    name        = string
+    description = optional(string)
+    visibility  = optional(string)
 
     options = optional(object({
+      # Not sure if these are needed (DRY?) - Already handled in module
       gitignore_template = optional(string)
       has_issues         = optional(bool)
       has_discussions    = optional(bool)
@@ -16,6 +16,8 @@ variable "github_repositories" {
       has_downloads      = optional(bool)
       license_template   = optional(string)
     }))
+
+    create_terraform_cloud_workspace = optional(bool, false)
   }))
 }
 
