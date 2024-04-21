@@ -1,7 +1,7 @@
 github_repositories = [
   {
     name        = "GitHub-Repositories"
-    description = "Terraform + HCL Setup of my GitHub Repositories"
+    description = "Used to store my GitHub Repositories and optional connected TFE Workspaces."
     visibility  = "public"
     archived    = false
 
@@ -9,6 +9,8 @@ github_repositories = [
       has_projects = false
       has_wiki     = false
     }
+
+    create_terraform_cloud_workspace = true
   }
 ]
 
