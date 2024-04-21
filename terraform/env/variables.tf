@@ -9,9 +9,11 @@ variable "github_repositories" {
 
     options = optional(object({
       gitignore_template = optional(string)
-      has_downloads      = optional(bool)
+      has_issues         = optional(bool)
+      has_discussions    = optional(bool)
       has_projects       = optional(bool)
       has_wiki           = optional(bool)
+      has_downloads      = optional(bool)
       license_template   = optional(string)
     }))
   }))

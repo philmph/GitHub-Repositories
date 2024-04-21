@@ -27,17 +27,21 @@ variable "visibility" {
 variable "options" {
   type = object({
     gitignore_template = optional(string)
-    has_downloads      = optional(bool, true)
+    has_issues         = optional(bool, false)
+    has_discussions    = optional(bool, false)
     has_projects       = optional(bool, true)
     has_wiki           = optional(bool, true)
+    has_downloads      = optional(bool, true)
     license_template   = optional(string)
   })
 
   default = {
     gitignore_template = null
-    has_downloads      = true
+    has_issues         = false
+    has_discussions    = false
     has_projects       = true
     has_wiki           = true
+    has_downloads      = true
     license_template   = null
   }
 

@@ -15,8 +15,10 @@ resource "github_repository" "this" {
 
   # Optional settings
   gitignore_template = local.options.gitignore_template
-  has_downloads      = local.options.has_downloads
+  has_issues         = local.options.has_issues
+  has_discussions    = local.options.has_discussions
   has_projects       = local.options.has_projects
   has_wiki           = local.options.has_wiki
+  has_downloads      = local.options.has_downloads
   license_template   = local.options.license_template
 }
