@@ -33,7 +33,7 @@ variable "options" {
     has_discussions    = optional(bool, false)
     has_projects       = optional(bool, true)
     has_wiki           = optional(bool, true)
-    has_downloads      = optional(bool, true)
+    has_downloads      = optional(bool, false)
     license_template   = optional(string)
   })
 
@@ -43,7 +43,7 @@ variable "options" {
     has_discussions    = false
     has_projects       = true
     has_wiki           = true
-    has_downloads      = true
+    has_downloads      = false
     license_template   = null
   }
 
