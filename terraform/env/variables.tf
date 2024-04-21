@@ -1,9 +1,3 @@
-variable "github_token" {
-  description = "GitHub token for authentication"
-  type        = string
-  sensitive   = true
-}
-
 variable "github_repositories" {
   description = "A list of GitHub repositories to create"
   type = list(object({
@@ -28,4 +22,10 @@ variable "github_token" {
   type        = string
   sensitive   = true
 }
+
+variable "tfe_token" {
+  default     = ""
+  description = "Terraform Cloud token for authentication. Required if create_terraform_cloud_workspace is true."
+  type        = string
+  sensitive   = true
 }
