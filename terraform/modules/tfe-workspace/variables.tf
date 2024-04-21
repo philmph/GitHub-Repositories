@@ -11,7 +11,7 @@ variable "project_name" {
 
 variable "workspace_description" {
   description = "Description of the TFE workspace"
-  default     = null
+  default     = "Created by Terraform."
   type        = string
 }
 
@@ -23,5 +23,11 @@ variable "workspace_execution_mode" {
 
 variable "workspace_name" {
   description = "Name of the TFE workspace"
+  type        = string
+}
+
+variable "workspace_working_directory" {
+  description = "Path to the TFE workspaces working directory"
+  default     = null
   type        = string
 }

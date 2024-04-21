@@ -13,7 +13,8 @@ github_repositories = [
     create_terraform_cloud_workspace = true
 
     terraform_cloud_options = {
-      workspace_execution_mode = "local"
+      workspace_execution_mode    = "local"
+      workspace_working_directory = "terraform/env"
     }
   }
 ]

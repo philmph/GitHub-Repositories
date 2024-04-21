@@ -4,9 +4,10 @@ data "tfe_project" "this" {
 }
 
 resource "tfe_workspace" "this" {
-  name         = local.workspace_name
-  description  = local.workspace_description
-  organization = local.organization
+  name              = local.workspace_name
+  description       = local.workspace_description
+  organization      = local.organization
+  working_directory = local.workspace_working_directory
 
   project_id = data.tfe_project.this.id
 
