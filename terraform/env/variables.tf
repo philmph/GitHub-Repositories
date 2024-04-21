@@ -18,6 +18,7 @@ variable "github_repositories" {
     }))
 
     create_terraform_cloud_workspace = optional(bool, false)
+    terraform_cloud_options          = optional(object({}))
   }))
 }
 
@@ -29,7 +30,13 @@ variable "github_token" {
 
 variable "tfe_token" {
   default     = ""
-  description = "Terraform Cloud token for authentication. Required if create_terraform_cloud_workspace is true."
+  description = "Terraform Cloud token for authentication. Required if create_terraform_cloud_workspace is true"
   type        = string
   sensitive   = true
+}
+
+variable "tfe_organization" {
+  default     = ""
+  description = "Terraform Cloud organization"
+  type        = string
 }

@@ -11,10 +11,12 @@ module "github_repository" {
   options = each.value.options
 }
 
-# module "tfe_workspace" {
-#   source = "../modules/tfe-workspace"
+module "tfe_workspace" {
+  source = "../modules/tfe-workspace"
 
-#   for_each = { for i, o in local.github_repositories : o.name => o if o.create_terraform_cloud_workspace }
+  for_each = { for i, o in local.github_repositories : o.name => o if o.create_terraform_cloud_workspace }
 
-#   # TODO
-# }
+  name         = each.value.name
+  description  = each.value.description
+  organization = each.value.terraform_cloud_options.organization
+}

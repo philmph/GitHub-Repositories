@@ -3,5 +3,6 @@ provider "github" {
 }
 
 provider "tfe" {
-  token = local.tfe_token
+  token        = local.tfe_token
+  organization = local.tfe_organization
 }
