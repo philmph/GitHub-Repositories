@@ -20,5 +20,7 @@ module "tfe_workspace" {
   workspace_description = each.value.description
   workspace_name        = each.value.name
 
+  # TODO Research why using null doesn't lead to module using defaul value
+  # workspace_execution_mode = null
   workspace_execution_mode = each.value.terraform_cloud_options.workspace_execution_mode
 }
