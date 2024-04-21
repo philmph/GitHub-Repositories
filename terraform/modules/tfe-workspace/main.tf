@@ -1,5 +1,5 @@
 resource "tfe_workspace" "this" {
-  name         = local.name
-  description  = local.description
+  name         = local.workspace_name
+  description  = local.workspace_description
   organization = local.organization
 }
