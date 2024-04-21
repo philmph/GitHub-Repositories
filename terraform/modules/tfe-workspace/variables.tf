@@ -3,6 +3,12 @@ variable "organization" {
   type        = string
 }
 
+variable "project_name" {
+  description = "Name of the project"
+  default     = "Default Project"
+  type        = string
+}
+
 variable "workspace_description" {
   description = "Description of the TFE workspace"
   default     = null
