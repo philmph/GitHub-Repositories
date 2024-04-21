@@ -46,3 +46,7 @@ variable "tfe_token" {
   type        = string
   sensitive   = true
 }
+
+variable "noT_Snake" {
+
+}
