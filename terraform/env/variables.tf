@@ -15,10 +15,15 @@ variable "github_repositories" {
       has_wiki           = optional(bool)
       has_downloads      = optional(bool)
       license_template   = optional(string)
-    }))
+      }), {}
+    )
 
     create_terraform_cloud_workspace = optional(bool, false)
-    terraform_cloud_options          = optional(object({}))
+
+    terraform_cloud_options = optional(object({
+      workspace_execution_mode = optional(string)
+      }), {}
+    )
   }))
 }
 
