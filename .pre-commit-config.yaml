@@ -1,22 +1,19 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0 # TODO Update
+    rev: v4.5.0
     hooks:
-      - id: check-yaml
-      - id: detect-private-key
+      - id: check-merge-conflict
       - id: end-of-file-fixer
       - id: trailing-whitespace
         args:
-          - --markdown-linebreak-ext=md
+          - "--markdown-linebreak-ext=md"
 
   - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.78.0 # TODO Update
+    rev: v1.89.0
     hooks:
       - id: terraform_docs
         args:
-          - --args=--lockfile=false
+          - "--args=--lockfile=false"
       - id: terraform_fmt
       - id: terraform_tflint
-        args:
-          - TODO
       - id: terraform_validate
