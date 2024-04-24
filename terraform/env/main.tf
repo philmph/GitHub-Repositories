@@ -16,7 +16,7 @@ module "tfe_workspace" {
 
   for_each = { for i, o in local.github_repositories : o.name => o if o.create_terraform_cloud_workspace }
 
-  organization          = var.tfe_organization
+  tfe_organization      = local.tfe_organization
   workspace_description = each.value.description
   workspace_name        = each.value.name
 

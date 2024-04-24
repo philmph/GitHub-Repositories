@@ -1,5 +1,5 @@
 locals {
-  organization                = var.organization
+  tfe_organization            = var.tfe_organization
   project_name                = var.project_name
   workspace_description       = var.workspace_description
   workspace_execution_mode    = var.workspace_execution_mode

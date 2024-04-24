@@ -1,4 +1,4 @@
-variable "organization" {
+variable "tfe_organization" {
   description = "Name of the TFE organization"
   type        = string
 }

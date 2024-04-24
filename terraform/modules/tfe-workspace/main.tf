@@ -1,12 +1,13 @@
 data "tfe_project" "this" {
   name         = local.project_name
-  organization = local.organization
+  organization = local.tfe_organization
 }
+  organization     = local.tfe_organization
 
 resource "tfe_workspace" "this" {
   name              = local.workspace_name
   description       = local.workspace_description
-  organization      = local.organization
+  organization      = local.tfe_organization
   working_directory = local.workspace_working_directory
 
   project_id = data.tfe_project.this.id
