@@ -15,6 +15,7 @@ github_repositories = [
     terraform_cloud_options = {
       workspace_execution_mode    = "remote"
       workspace_working_directory = "terraform/env"
+      enable_vcs_workflow         = true
     }
   },
   {
