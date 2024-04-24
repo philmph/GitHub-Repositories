@@ -1,6 +1,6 @@
 # GitHub-Repositories
 
-Terraform + HCL Setup of my GitHub Repositories.
+I use this repository to setup my own GitHub repositories with the option to also provision an equivalent workspace in TFE (Terraform Cloud).
 
 ## Nullable Gotcha
 
@@ -11,3 +11,7 @@ Docs:
 - https://github.com/hashicorp/terraform/issues/24142
 - https://github.com/hashicorp/terraform/issues/29858
 - https://github.com/hashicorp/terraform/pull/29832
+
+## License
+
+- [LICENSE](./LICENSE)
