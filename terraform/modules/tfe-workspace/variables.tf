@@ -1,3 +1,10 @@
+variable "enable_vcs_workflow" {
+  description = "Enable VCS workflow for the TFE workspace"
+  default     = false
+  nullable    = false
+  type        = bool
+}
+
 variable "tfe_organization" {
   description = "Name of the TFE organization"
   type        = string
@@ -6,6 +13,12 @@ variable "tfe_organization" {
 variable "project_name" {
   description = "Name of the project"
   default     = "Default Project"
+  type        = string
+}
+
+variable "vcs_repo_identifier" {
+  description = "Identifier of the VCS repository"
+  default     = null
   type        = string
 }
 
