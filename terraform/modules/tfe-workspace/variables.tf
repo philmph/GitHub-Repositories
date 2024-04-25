@@ -35,9 +35,22 @@ variable "workspace_execution_mode" {
   type        = string
 }
 
+variable "workspace_file_triggers_enabled" {
+  description = "Enable file triggers for the TFE workspace"
+  default     = false
+  nullable    = false
+  type        = bool
+}
+
 variable "workspace_name" {
   description = "Name of the TFE workspace"
   type        = string
+}
+
+variable "workspace_trigger_patterns" {
+  description = "List of glob pattern triggers for the TFE workspace. Only relevant if 'workspace_file_triggers_enabled' is 'true'."
+  default     = null
+  type        = list(string)
 }
 
 variable "workspace_working_directory" {
