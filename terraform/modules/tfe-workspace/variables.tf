@@ -47,6 +47,12 @@ variable "workspace_name" {
   type        = string
 }
 
+variable "workspace_trigger_patterns" {
+  description = "List of glob pattern triggers for the TFE workspace. Only relevant if 'workspace_file_triggers_enabled' is 'true'."
+  default     = null
+  type        = list(string)
+}
+
 variable "workspace_working_directory" {
   description = "Path to the TFE workspaces working directory"
   default     = null

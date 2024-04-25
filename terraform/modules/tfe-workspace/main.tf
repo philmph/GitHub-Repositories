@@ -15,6 +15,7 @@ resource "tfe_workspace" "this" {
   description           = local.workspace_description
   file_triggers_enabled = local.workspace_file_triggers_enabled
   organization          = local.tfe_organization
+  trigger_patterns      = local.workspace_trigger_patterns
   working_directory     = local.workspace_working_directory
 
   project_id = data.tfe_project.this.id
