@@ -3,8 +3,6 @@ data "tfe_project" "this" {
   organization = local.tfe_organization
 }
 
-# TODO Why does this trigger a ~ change in TFE
-
 data "tfe_oauth_client" "this" {
   count = local.enable_vcs_workflow ? 1 : 0
 
