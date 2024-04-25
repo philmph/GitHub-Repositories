@@ -35,6 +35,13 @@ variable "workspace_execution_mode" {
   type        = string
 }
 
+variable "workspace_file_triggers_enabled" {
+  description = "Enable file triggers for the TFE workspace"
+  default     = false
+  nullable    = false
+  type        = bool
+}
+
 variable "workspace_name" {
   description = "Name of the TFE workspace"
   type        = string

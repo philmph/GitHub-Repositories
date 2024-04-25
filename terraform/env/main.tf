@@ -20,9 +20,10 @@ module "tfe_workspace" {
   workspace_description = each.value.description
   workspace_name        = each.value.name
 
-  workspace_execution_mode    = each.value.terraform_cloud_options.workspace_execution_mode
-  workspace_working_directory = each.value.terraform_cloud_options.workspace_working_directory
-  enable_vcs_workflow         = each.value.terraform_cloud_options.enable_vcs_workflow
+  workspace_execution_mode        = each.value.terraform_cloud_options.workspace_execution_mode
+  workspace_file_triggers_enabled = each.value.terraform_cloud_options.workspace_file_triggers_enabled
+  workspace_working_directory     = each.value.terraform_cloud_options.workspace_working_directory
+  enable_vcs_workflow             = each.value.terraform_cloud_options.enable_vcs_workflow
 
   vcs_repo_identifier = module.github_repository[each.value.name].full_name
 

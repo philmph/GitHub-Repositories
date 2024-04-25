@@ -11,10 +11,11 @@ data "tfe_oauth_client" "this" {
 }
 
 resource "tfe_workspace" "this" {
-  name              = local.workspace_name
-  description       = local.workspace_description
-  organization      = local.tfe_organization
-  working_directory = local.workspace_working_directory
+  name                  = local.workspace_name
+  description           = local.workspace_description
+  file_triggers_enabled = local.workspace_file_triggers_enabled
+  organization          = local.tfe_organization
+  working_directory     = local.workspace_working_directory
 
   project_id = data.tfe_project.this.id
 

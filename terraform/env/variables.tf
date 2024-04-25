@@ -21,9 +21,10 @@ variable "github_repositories" {
     create_terraform_cloud_workspace = optional(bool, false)
 
     terraform_cloud_options = optional(object({
-      workspace_execution_mode    = optional(string)
-      workspace_working_directory = optional(string)
-      enable_vcs_workflow         = optional(bool)
+      workspace_execution_mode        = optional(string)
+      workspace_file_triggers_enabled = optional(bool)
+      workspace_working_directory     = optional(string)
+      enable_vcs_workflow             = optional(bool)
       }), {}
     )
   }))
