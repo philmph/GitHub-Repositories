@@ -20,6 +20,7 @@ module "tfe_workspace" {
 
   workspace_description           = each.value.description
   workspace_name                  = each.value.name
+  workspace_auto_apply            = each.value.terraform_cloud_options.workspace_auto_apply
   workspace_execution_mode        = each.value.terraform_cloud_options.workspace_execution_mode
   workspace_file_triggers_enabled = each.value.terraform_cloud_options.workspace_file_triggers_enabled
   workspace_trigger_patterns      = each.value.terraform_cloud_options.workspace_trigger_patterns
