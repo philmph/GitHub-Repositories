@@ -1,8 +1,8 @@
 provider "github" {
-  token = local.github_token
+  token = var.github_token
 }
 
 provider "tfe" {
-  token        = local.tfe_token
-  organization = local.tfe_organization
+  token        = var.tfe_token
+  organization = var.tfe_organization
 }
