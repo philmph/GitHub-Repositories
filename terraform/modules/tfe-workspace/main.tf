@@ -1,3 +1,5 @@
+# TODO The data sources always trigger changes in TFE
+
 data "tfe_project" "this" {
   name         = local.project_name
   organization = local.tfe_organization

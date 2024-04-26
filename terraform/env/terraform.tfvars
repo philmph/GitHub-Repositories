@@ -18,24 +18,16 @@ github_repositories = [
       enable_vcs_workflow         = true
     }
   },
-  # {
-  #   name        = "TFE-VCS-Workflow-Test"
-  #   description = "Repo to test VCS workflow with Terraform Cloud."
-  #   visibility  = "public"
-  #   archived    = false
 
-  #   options = {
-  #     gitignore_template = "Terraform"
-  #     has_projects       = false
-  #     has_wiki           = false
-  #   }
+  {
+    name        = "Terraform-Data-Types-Training"
+    description = "I will use this repository to build a simple module that showcases, uses and explains the various data types of Terraform."
+    visibility  = "public"
+    archived    = false
 
-  #   create_terraform_cloud_workspace = true
-
-  #   terraform_cloud_options = {
-  #     workspace_execution_mode    = "remote"
-  #     workspace_working_directory = "terraform"
-  #     enable_vcs_workflow         = true
-  #   }
-  # }
+    options = {
+      has_projects = false
+      has_wiki     = false
+    }
+  }
 ]
