@@ -14,6 +14,7 @@ data "tfe_oauth_client" "this" {
 
 resource "tfe_workspace" "this" {
   name                  = var.workspace_name
+  auto_apply            = var.workspace_auto_apply
   description           = var.workspace_description
   file_triggers_enabled = var.workspace_file_triggers_enabled
   organization          = var.tfe_organization

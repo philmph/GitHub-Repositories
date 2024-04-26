@@ -22,6 +22,12 @@ variable "vcs_repo_identifier" {
   type        = string
 }
 
+variable "workspace_auto_apply" {
+  description = "Enable auto apply for the TFE workspace"
+  default     = null
+  type        = bool
+}
+
 variable "workspace_description" {
   description = "Description of the TFE workspace"
   default     = "Created by Terraform."
