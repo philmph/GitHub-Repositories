@@ -10,10 +10,15 @@ variable "tfe_organization" {
   type        = string
 }
 
-variable "project_name" {
-  description = "Name of the project"
-  default     = "Default Project"
+variable "tfe_project_id" {
+  description = "ID of the TFE project"
   type        = string
+}
+
+variable "tfe_oauth_token_id" {
+  description = "ID of the TFE OAuth token"
+  type        = string
+  sensitive   = true
 }
 
 variable "vcs_repo_identifier" {
