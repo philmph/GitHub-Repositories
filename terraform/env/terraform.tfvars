@@ -33,8 +33,20 @@ github_repositories = [
   },
 
   {
+    name        = "Renovate-Bot"
+    description = "Self hosted Renovate Bot to keep my repositories up to date using GitHub Actions."
+    visibility  = "public"
+    archived    = false
+
+    options = {
+      has_projects = false
+      has_wiki     = false
+    }
+  },
+
+  {
     name        = "Renovate-Test"
-    description = "Used to test Renovate Bot."
+    description = "Used to test Renovate Bot in the Renovate-Bot repository."
     visibility  = "public"
     archived    = false
 
