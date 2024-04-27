@@ -35,3 +35,6 @@ override.tf.json
 terraform.rc
 
 # Custom additions
+
+# Ignore .terraform.lock.hcl because we use Renovate to direct pin
+.terraform.lock.hcl
