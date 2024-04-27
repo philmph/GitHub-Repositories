@@ -42,17 +42,5 @@ github_repositories = [
       has_projects = false
       has_wiki     = false
     }
-  },
-
-  {
-    name        = "Renovate-Test"
-    description = "Used to test Renovate Bot in the Renovate-Bot repository."
-    visibility  = "public"
-    archived    = false
-
-    options = {
-      has_projects = false
-      has_wiki     = false
-    }
   }
 ]
