@@ -4,6 +4,7 @@ on:
   schedule:
     # Every day at 3:20 am
     - cron: "20 3 * * *"
+  workflow_dispatch:
 
 jobs:
   renovate:
