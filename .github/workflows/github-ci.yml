@@ -2,8 +2,8 @@ name: github-ci
 
 on:
   push:
-    branches:
-      - "*"
+    paths:
+      - "terraform/**"
   pull_request:
     branches:
       - main
