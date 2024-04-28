@@ -39,7 +39,8 @@ github_repositories = [
       gitignore_template = "Terraform"
     }
 
-    enable_vcs_workflow = true
+    create_terraform_cloud_workspace = true
+
     terraform_cloud_options = {
       workspace_auto_apply        = true
       workspace_execution_mode    = "remote"
