@@ -54,13 +54,13 @@ No modules.
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.5 |
-| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | ~> 0.53 |
+| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | ~> 0.54 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | ~> 0.53 |
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | ~> 0.54 |
 
 ## Modules
 

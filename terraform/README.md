@@ -45,13 +45,13 @@ No resources.
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.5 |
 | <a name="requirement_github"></a> [github](#requirement\_github) | 6.2.1 |
-| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | 0.53.0 |
+| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | 0.54.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.53.0 |
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.54.0 |
 
 ## Modules
 
@@ -64,8 +64,8 @@ No resources.
 
 | Name | Type |
 |------|------|
-| [tfe_oauth_client.this](https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/data-sources/oauth_client) | data source |
-| [tfe_project.this](https://registry.terraform.io/providers/hashicorp/tfe/0.53.0/docs/data-sources/project) | data source |
+| [tfe_oauth_client.this](https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/data-sources/oauth_client) | data source |
+| [tfe_project.this](https://registry.terraform.io/providers/hashicorp/tfe/0.54.0/docs/data-sources/project) | data source |
 
 ## Inputs
 
