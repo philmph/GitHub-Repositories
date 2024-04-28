@@ -1,9 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "enabled": true,
-  "lockFileMaintenance": {
-    "enabled": true
-  },
-  "rangeStrategy": "replace",
-  "semanticCommits": "enabled"
+  "rangeStrategy": "update-lockfile"
 }
