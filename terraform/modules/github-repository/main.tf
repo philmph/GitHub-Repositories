@@ -1,9 +1,11 @@
 resource "github_repository" "this" {
-  name        = var.name
-  description = var.description
-  visibility  = var.visibility
-  archived    = var.archived
+  archived               = var.archived
+  delete_branch_on_merge = var.delete_branch_on_merge
+  description            = var.description
+  name                   = var.name
+  visibility             = var.visibility
 
+  # We always initialize the repository
   auto_init = true
 
   # Optional settings

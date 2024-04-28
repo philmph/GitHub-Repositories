@@ -13,11 +13,13 @@ module "github_repository" {
 
   for_each = { for i, o in var.github_repositories : o.name => o }
 
-  name        = each.value.name
-  description = each.value.description
-  visibility  = each.value.visibility
-  archived    = each.value.archived
-  options     = each.value.options
+  archived               = each.value.archived
+  delete_branch_on_merge = each.value.delete_branch_on_merge
+  description            = each.value.description
+  name                   = each.value.name
+  visibility             = each.value.visibility
+
+  options = each.value.options
 }
 
 module "tfe_workspace" {
