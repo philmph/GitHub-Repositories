@@ -5,11 +5,6 @@ github_repositories = [
     visibility  = "public"
     archived    = false
 
-    options = {
-      has_projects = false
-      has_wiki     = false
-    }
-
     create_terraform_cloud_workspace = true
 
     terraform_cloud_options = {
@@ -25,11 +20,6 @@ github_repositories = [
     description = "I will use this repository to build a simple module that showcases, uses and explains the various data types of Terraform."
     visibility  = "public"
     archived    = false
-
-    options = {
-      has_projects = false
-      has_wiki     = false
-    }
   },
 
   {
@@ -37,10 +27,25 @@ github_repositories = [
     description = "Self hosted Renovate Bot to keep my repositories up to date using GitHub Actions."
     visibility  = "public"
     archived    = false
+  },
+
+  {
+    name        = "Renovate-Test"
+    description = "Repository to test the Renovate Bot and its configuration."
+    visibility  = "public"
+    archived    = false
 
     options = {
-      has_projects = false
-      has_wiki     = false
+      gitignore_template = "Terraform"
+    }
+
+    create_terraform_cloud_workspace = true
+
+    terraform_cloud_options = {
+      workspace_auto_apply        = true
+      workspace_execution_mode    = "remote"
+      workspace_working_directory = "terraform"
+      enable_vcs_workflow         = true
     }
   }
 ]

@@ -1,13 +1,13 @@
 variable "github_repositories" {
   description = "A list of GitHub repositories to create"
   type = list(object({
-    archived    = optional(bool)
-    name        = string
-    description = optional(string)
-    visibility  = optional(string)
+    archived               = optional(bool)
+    delete_branch_on_merge = optional(bool)
+    description            = optional(string)
+    name                   = string
+    visibility             = optional(string)
 
     options = optional(object({
-      # Not sure if these are needed (DRY?) - Already handled in module
       gitignore_template = optional(string)
       has_issues         = optional(bool)
       has_discussions    = optional(bool)
@@ -21,12 +21,12 @@ variable "github_repositories" {
     create_terraform_cloud_workspace = optional(bool, false)
 
     terraform_cloud_options = optional(object({
+      enable_vcs_workflow             = optional(bool)
       workspace_auto_apply            = optional(bool)
       workspace_execution_mode        = optional(string)
       workspace_file_triggers_enabled = optional(bool)
       workspace_trigger_patterns      = optional(list(string))
       workspace_working_directory     = optional(string)
-      enable_vcs_workflow             = optional(bool)
       }), {}
     )
   }))
