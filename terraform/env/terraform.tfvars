@@ -34,5 +34,9 @@ github_repositories = [
     description = "Repository to test the Renovate Bot and its configuration."
     visibility  = "public"
     archived    = false
+
+    options = {
+      gitignore_template = "Terraform"
+    }
   }
 ]
