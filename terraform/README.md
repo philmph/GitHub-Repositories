@@ -57,8 +57,8 @@ No resources.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_github_repository"></a> [github\_repository](#module\_github\_repository) | ../modules/github-repository | n/a |
-| <a name="module_tfe_workspace"></a> [tfe\_workspace](#module\_tfe\_workspace) | ../modules/tfe-workspace | n/a |
+| <a name="module_github_repository"></a> [github\_repository](#module\_github\_repository) | ./modules/github-repository | n/a |
+| <a name="module_tfe_workspace"></a> [tfe\_workspace](#module\_tfe\_workspace) | ./modules/tfe-workspace | n/a |
 
 ## Resources
 
