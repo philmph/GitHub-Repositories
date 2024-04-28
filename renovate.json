@@ -4,6 +4,6 @@
   "lockFileMaintenance": {
     "enabled": true
   },
-  "rangeStrategy": "update-lockfile",
+  "rangeStrategy": "replace",
   "semanticCommits": "enabled"
 }
