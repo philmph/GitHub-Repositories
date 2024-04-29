@@ -50,11 +50,11 @@ github_repositories = [
     archived    = false
   },
 
-  # {
-  #   name       = "philmph"
-  #   visibility = "public"
-  #   archived   = false
-  # },
+  {
+    name       = "philmph"
+    visibility = "public"
+    archived   = false
+  },
 
   # {
   #   name        = "PowerShell-Common-Functions"
