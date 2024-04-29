@@ -3,7 +3,7 @@ github_repositories = [
     name        = "Advent-of-Code-2022"
     description = "Trying to write solutions for https://adventofcode.com/2022 in Python."
     visibility  = "public"
-    archived    = false
+    archived    = true
   },
 
   # {
