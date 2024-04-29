@@ -11,7 +11,7 @@ data "tfe_oauth_client" "this" {
 module "github_repository" {
   source = "./modules/github-repository"
 
-  for_each = { for i, o in var.github_repositories : o.name => o }
+  for_each = { for i, o in var.github_repositories : replace(o.name, "/[^a-zA-Z\\-]/", "") => o }
 
   archived               = each.value.archived
   delete_branch_on_merge = each.value.delete_branch_on_merge
@@ -25,7 +25,7 @@ module "github_repository" {
 module "tfe_workspace" {
   source = "./modules/tfe-workspace"
 
-  for_each = { for i, o in var.github_repositories : o.name => o if o.create_terraform_cloud_workspace }
+  for_each = { for i, o in var.github_repositories : replace(o.name, "/[^a-zA-Z\\-]/", "") => o if o.create_terraform_cloud_workspace }
 
   tfe_project_id     = data.tfe_project.this.id
   tfe_oauth_token_id = data.tfe_oauth_client.this.oauth_token_id
