@@ -24,8 +24,8 @@ variable "name" {
   description = "The name of the repository"
 
   validation {
-    condition     = can(regex("^[-a-zA-Z]+$", var.name)) && length(var.name) <= 100
-    error_message = "Invalid repository name. Only letters and dashes are allowed."
+    condition     = can(regex("^[a-zA-Z0-9\\-]+$", var.name)) && length(var.name) <= 100
+    error_message = "Invalid repository name. Only letters, numbers, and dashes are allowed."
   }
 }
 
