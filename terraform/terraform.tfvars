@@ -16,7 +16,7 @@ github_repositories = [
   {
     name        = "Frame"
     description = "The idea of Frame is to standardize the scaffolding process of PowerShell Projects and ScriptModules."
-    visibility  = "private"
+    visibility  = "public"
     archived    = true
   },
 
@@ -47,7 +47,7 @@ github_repositories = [
     name        = "Log-istic"
     description = "This project is used to provide various different logging functions for PowerShell."
     visibility  = "public"
-    archived    = false
+    archived    = true
   },
 
   {
@@ -60,14 +60,14 @@ github_repositories = [
     name        = "PowerShell-Common-Functions"
     description = "This repository is used to collect various different PowerShell classes and functions I've written over time."
     visibility  = "public"
-    archived    = false
+    archived    = true
   },
 
   {
     name        = "PowerShell-VSCode-Snippets"
     description = "This repository is used by myself to maintain my VS Code snippets for PowerShell."
     visibility  = "public"
-    archived    = false
+    archived    = true
   },
 
   {
