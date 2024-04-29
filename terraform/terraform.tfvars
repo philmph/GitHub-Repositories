@@ -6,12 +6,12 @@ github_repositories = [
     archived    = true
   },
 
-  # {
-  #   name        = "Builder"
-  #   description = "Building a highly automated PowerShell sample module."
-  #   visibility  = "private"
-  #   archived    = true
-  # },
+  {
+    name        = "Builder"
+    description = "Building a highly automated PowerShell sample module."
+    visibility  = "private"
+    archived    = true
+  },
 
   # {
   #   name        = "Frame"
