@@ -56,12 +56,12 @@ github_repositories = [
     archived   = false
   },
 
-  # {
-  #   name        = "PowerShell-Common-Functions"
-  #   description = "This repository is used to collect various different PowerShell classes and functions I've written over time."
-  #   visibility  = "public"
-  #   archived    = false
-  # },
+  {
+    name        = "PowerShell-Common-Functions"
+    description = "This repository is used to collect various different PowerShell classes and functions I've written over time."
+    visibility  = "public"
+    archived    = false
+  },
 
   # {
   #   name        = "PowerShell-VSCode-Snippets"
