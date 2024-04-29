@@ -63,12 +63,12 @@ github_repositories = [
     archived    = false
   },
 
-  # {
-  #   name        = "PowerShell-VSCode-Snippets"
-  #   description = "This repository is used by myself to maintain my VS Code snippets for PowerShell."
-  #   visibility  = "public"
-  #   archived    = false
-  # },
+  {
+    name        = "PowerShell-VSCode-Snippets"
+    description = "This repository is used by myself to maintain my VS Code snippets for PowerShell."
+    visibility  = "public"
+    archived    = false
+  },
 
   {
     name        = "Renovate-Bot"
