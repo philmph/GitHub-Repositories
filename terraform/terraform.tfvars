@@ -13,12 +13,12 @@ github_repositories = [
     archived    = true
   },
 
-  # {
-  #   name        = "Frame"
-  #   description = "The idea of Frame is to standardize the scaffolding process of PowerShell Projects and ScriptModules."
-  #   visibility  = "private"
-  #   archived    = true
-  # },
+  {
+    name        = "Frame"
+    description = "The idea of Frame is to standardize the scaffolding process of PowerShell Projects and ScriptModules."
+    visibility  = "private"
+    archived    = true
+  },
 
   {
     name        = "GitHub-Repositories"
