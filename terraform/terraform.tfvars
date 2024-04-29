@@ -43,12 +43,12 @@ github_repositories = [
     archived    = false
   },
 
-  # {
-  #   name        = "Log-istic"
-  #   description = "This project is used to provide various different logging functions for PowerShell."
-  #   visibility  = "public"
-  #   archived    = false
-  # },
+  {
+    name        = "Log-istic"
+    description = "This project is used to provide various different logging functions for PowerShell."
+    visibility  = "public"
+    archived    = false
+  },
 
   # {
   #   name       = "philmph"
