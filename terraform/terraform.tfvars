@@ -36,12 +36,12 @@ github_repositories = [
     }
   },
 
-  # {
-  #   name        = "Learning-Go"
-  #   description = "I will use this repository to upload example code while learning Go."
-  #   visibility  = "public"
-  #   archived    = false
-  # },
+  {
+    name        = "Learning-Go"
+    description = "I will use this repository to upload example code while learning Go."
+    visibility  = "public"
+    archived    = false
+  },
 
   # {
   #   name        = "Log-istic"
