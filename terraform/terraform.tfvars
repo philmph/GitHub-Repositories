@@ -44,6 +44,13 @@ github_repositories = [
   },
 
   {
+    name        = "Lets-Go-Snippetbox"
+    description = "Repository to follow along with the book 'Let's Go' by Alex Edwards."
+    visibility  = "public"
+    archived    = false
+  },
+
+  {
     name        = "Log-istic"
     description = "This project is used to provide various different logging functions for PowerShell."
     visibility  = "public"
