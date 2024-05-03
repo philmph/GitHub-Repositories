@@ -85,8 +85,15 @@ github_repositories = [
   },
 
   {
+    name        = "Renovate-Bot-Test"
+    description = "Repository to test the Renovate Bot (Bot) and its configuration."
+    visibility  = "public"
+    archived    = false
+  },
+
+  {
     name        = "Renovate-Test"
-    description = "Repository to test the Renovate Bot and its configuration."
+    description = "Repository to test the Renovate Bot (Target) and its configuration."
     visibility  = "public"
     archived    = false
 
