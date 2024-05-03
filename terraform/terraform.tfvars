@@ -100,6 +100,23 @@ github_repositories = [
     }
   },
 
+  # TODO Delete this one
+  {
+    name       = "Renovate-Test"
+    visibility = "public"
+    archived   = false
+
+    allow_delete                     = true
+    create_terraform_cloud_workspace = true
+
+    terraform_cloud_options = {
+      workspace_auto_apply        = true
+      workspace_execution_mode    = "remote"
+      workspace_working_directory = "terraform"
+      enable_vcs_workflow         = true
+    }
+  },
+
   {
     name        = "Terraform-Data-Types-Training"
     description = "I will use this repository to build a simple module that showcases, uses and explains the various data types of Terraform."
