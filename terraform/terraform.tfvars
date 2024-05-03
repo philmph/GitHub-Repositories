@@ -86,27 +86,16 @@ github_repositories = [
 
   {
     name        = "Renovate-Bot-Test"
-    description = "Repository to test the Renovate Bot (Bot) and its configuration."
+    description = "Repository to test my Renovate Bot configuration."
     visibility  = "public"
     archived    = false
-  },
-
-  {
-    name        = "Renovate-Test"
-    description = "Repository to test the Renovate Bot (Target) and its configuration."
-    visibility  = "public"
-    archived    = false
-
-    options = {
-      gitignore_template = "Terraform"
-    }
 
     create_terraform_cloud_workspace = true
 
     terraform_cloud_options = {
       workspace_auto_apply        = true
       workspace_execution_mode    = "remote"
-      workspace_working_directory = "terraform"
+      workspace_working_directory = "tests/terraform"
       enable_vcs_workflow         = true
     }
   },
