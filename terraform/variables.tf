@@ -1,3 +1,9 @@
+variable "allow_delete" {
+  description = "Allow deletion of resources"
+  type        = bool
+  default     = false
+}
+
 variable "github_repositories" {
   description = "A list of GitHub repositories to create"
   type = list(object({

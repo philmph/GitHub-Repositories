@@ -3,6 +3,7 @@ resource "tfe_workspace" "this" {
   auto_apply            = var.workspace_auto_apply
   description           = var.workspace_description
   file_triggers_enabled = var.workspace_file_triggers_enabled
+  force_delete          = var.allow_workspace_deletion
   organization          = var.tfe_organization
   trigger_patterns      = var.workspace_trigger_patterns
   working_directory     = var.workspace_working_directory
