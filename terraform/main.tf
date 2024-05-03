@@ -30,7 +30,8 @@ module "tfe_workspace" {
   tfe_project_id     = data.tfe_project.this.id
   tfe_oauth_token_id = data.tfe_oauth_client.this.oauth_token_id
 
-  tfe_organization = var.tfe_organization
+  allow_workspace_deletion = var.allow_delete
+  tfe_organization         = var.tfe_organization
 
   workspace_description = each.value.description
   workspace_name        = each.value.name

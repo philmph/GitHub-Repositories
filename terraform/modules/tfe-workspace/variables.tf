@@ -1,3 +1,9 @@
+variable "allow_workspace_deletion" {
+  description = "Allow deletion of the TFE workspace"
+  default     = false
+  type        = bool
+}
+
 variable "enable_vcs_workflow" {
   description = "Enable VCS workflow for the TFE workspace"
   default     = false

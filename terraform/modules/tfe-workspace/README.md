@@ -77,6 +77,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_allow_workspace_deletion"></a> [allow\_workspace\_deletion](#input\_allow\_workspace\_deletion) | Allow deletion of the TFE workspace | `bool` | `false` | no |
 | <a name="input_enable_vcs_workflow"></a> [enable\_vcs\_workflow](#input\_enable\_vcs\_workflow) | Enable VCS workflow for the TFE workspace | `bool` | `false` | no |
 | <a name="input_tfe_oauth_token_id"></a> [tfe\_oauth\_token\_id](#input\_tfe\_oauth\_token\_id) | ID of the TFE OAuth token | `string` | n/a | yes |
 | <a name="input_tfe_organization"></a> [tfe\_organization](#input\_tfe\_organization) | Name of the TFE organization | `string` | n/a | yes |
