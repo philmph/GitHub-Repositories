@@ -114,7 +114,7 @@ github_repositories = [
     archived    = false
 
     options = {
-      gitignore_template = "terraform"
+      gitignore_template = "Terraform"
     }
   }
 ]
