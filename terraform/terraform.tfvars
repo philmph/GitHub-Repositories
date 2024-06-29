@@ -105,5 +105,16 @@ github_repositories = [
     description = "I will use this repository to build a simple module that showcases, uses and explains the various data types of Terraform."
     visibility  = "public"
     archived    = false
+  },
+
+  {
+    name        = "Terraform-Explorer"
+    description = "Used to test various Terraform features. Mostly a showcase repository."
+    visibility  = "public"
+    archived    = false
+
+    options = {
+      gitignore_template = "terraform"
+    }
   }
 ]
