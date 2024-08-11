@@ -116,5 +116,16 @@ github_repositories = [
     options = {
       gitignore_template = "Terraform"
     }
-  }
+  },
+
+  {
+    name        = "Vienna-HUG-MeetUp-Sep-2024"
+    description = "Repository to store the code samples for my Vienna HUG MeetUp talk in September 2024."
+    visibility  = "public"
+    archived    = false
+
+    options = {
+      gitignore_template = "Terraform"
+    }
+  },
 ]
