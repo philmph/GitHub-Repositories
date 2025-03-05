@@ -14,6 +14,17 @@ github_repositories = [
   },
 
   {
+    name        = "Cloudflare"
+    description = "I use this Repository to manage my Domain in Cloudflare."
+    visibility  = "public"
+    archived    = false
+
+    options = {
+      gitignore_template = "Terraform"
+    }
+  },
+
+  {
     name        = "Frame"
     description = "The idea of Frame is to standardize the scaffolding process of PowerShell Projects and ScriptModules."
     visibility  = "public"
