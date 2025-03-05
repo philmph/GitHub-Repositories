@@ -3,14 +3,14 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.5 |
-| <a name="requirement_github"></a> [github](#requirement\_github) | ~> 6.2 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5, < 2.0 |
+| <a name="requirement_github"></a> [github](#requirement\_github) | >= 6.2.1, < 7.0.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_github"></a> [github](#provider\_github) | ~> 6.2 |
+| <a name="provider_github"></a> [github](#provider\_github) | >= 6.2.1, < 7.0.0 |
 
 ## Modules
 
@@ -29,9 +29,10 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_archived"></a> [archived](#input\_archived) | The archived status of the repository | `bool` | `false` | no |
-| <a name="input_description"></a> [description](#input\_description) | The description of the repository | `string` | `null` | no |
+| <a name="input_delete_branch_on_merge"></a> [delete\_branch\_on\_merge](#input\_delete\_branch\_on\_merge) | The delete branch on PR merge setting of the repository | `bool` | `true` | no |
+| <a name="input_description"></a> [description](#input\_description) | The description of the repository | `string` | `"Created by Terraform (philmph/GitHub-Repositories)"` | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of the repository | `string` | n/a | yes |
-| <a name="input_options"></a> [options](#input\_options) | Optional options for the repository | <pre>object({<br>    gitignore_template = optional(string)<br>    has_issues         = optional(bool, false)<br>    has_discussions    = optional(bool, false)<br>    has_projects       = optional(bool, true)<br>    has_wiki           = optional(bool, true)<br>    has_downloads      = optional(bool, false)<br>    license_template   = optional(string)<br>  })</pre> | <pre>{<br>  "gitignore_template": null,<br>  "has_discussions": false,<br>  "has_downloads": false,<br>  "has_issues": false,<br>  "has_projects": true,<br>  "has_wiki": true,<br>  "license_template": null<br>}</pre> | no |
+| <a name="input_options"></a> [options](#input\_options) | Optional options for the repository | <pre>object({<br/>    gitignore_template = optional(string, null)<br/>    has_issues         = optional(bool, true)<br/>    has_discussions    = optional(bool, false)<br/>    has_projects       = optional(bool, false)<br/>    has_wiki           = optional(bool, false)<br/>    has_downloads      = optional(bool, false)<br/>    license_template   = optional(string, "mit")<br/>  })</pre> | <pre>{<br/>  "gitignore_template": null,<br/>  "has_discussions": false,<br/>  "has_downloads": false,<br/>  "has_issues": true,<br/>  "has_projects": false,<br/>  "has_wiki": false,<br/>  "license_template": "mit"<br/>}</pre> | no |
 | <a name="input_visibility"></a> [visibility](#input\_visibility) | The visibility of the repository | `string` | `"public"` | no |
 
 ## Outputs
