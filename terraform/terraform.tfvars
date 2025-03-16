@@ -22,6 +22,13 @@ github_repositories = [
     options = {
       gitignore_template = "Terraform"
     }
+
+    create_spacelift_stack = true
+
+    spacelift_stack_options = {
+      enable_local_preview = true
+      project_root         = "terraform/"
+    }
   },
 
   {
