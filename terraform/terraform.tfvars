@@ -40,17 +40,17 @@ github_repositories = [
 
   {
     name        = "GitHub-Repositories"
-    description = "Used to store my GitHub Repositories and optional connected TFE Workspaces."
+    description = "Used to store my GitHub Repositories and optional connected TFE Workspace or Spacelift Stack."
     visibility  = "public"
     archived    = false
 
     create_terraform_cloud_workspace = true
 
     terraform_cloud_options = {
+      enable_vcs_workflow         = true
       workspace_auto_apply        = true
       workspace_execution_mode    = "remote"
       workspace_working_directory = "terraform"
-      enable_vcs_workflow         = true
     }
   },
 
