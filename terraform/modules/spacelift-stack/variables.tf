@@ -53,6 +53,12 @@ variable "repository" {
   type        = string
 }
 
+variable "terraform_smart_sanitization" {
+  default     = true
+  description = "Whether to use smart sanitization (recommended)"
+  type        = bool
+}
+
 variable "terraform_version" {
   default     = "~> 1.9"
   description = "The version of Terraform to use"
