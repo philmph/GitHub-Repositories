@@ -40,13 +40,14 @@ variable "github_repositories" {
     create_spacelift_stack = optional(bool, false)
 
     spacelift_stack_options = optional(object({
-      autodeploy              = optional(bool)
-      enable_local_preview    = optional(bool)
-      labels                  = optional(set(string))
-      project_root            = optional(string)
-      protect_from_deletion   = optional(bool)
-      terraform_version       = optional(string)
-      terraform_workflow_tool = optional(string)
+      autodeploy                       = optional(bool)
+      enable_local_preview             = optional(bool)
+      enable_well_known_secret_masking = optional(bool)
+      labels                           = optional(set(string))
+      project_root                     = optional(string)
+      protect_from_deletion            = optional(bool)
+      terraform_version                = optional(string)
+      terraform_workflow_tool          = optional(string)
       }), {}
     )
   }))

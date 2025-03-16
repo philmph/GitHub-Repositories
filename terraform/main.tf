@@ -56,13 +56,14 @@ module "spacelift_stack" {
   description = each.value.description
   name        = each.value.name
 
-  autodeploy              = each.value.spacelift_stack_options.autodeploy
-  enable_local_preview    = each.value.spacelift_stack_options.enable_local_preview
-  labels                  = each.value.spacelift_stack_options.labels
-  project_root            = each.value.spacelift_stack_options.project_root
-  protect_from_deletion   = each.value.spacelift_stack_options.protect_from_deletion
-  terraform_version       = each.value.spacelift_stack_options.terraform_version
-  terraform_workflow_tool = each.value.spacelift_stack_options.terraform_workflow_tool
+  autodeploy                       = each.value.spacelift_stack_options.autodeploy
+  enable_local_preview             = each.value.spacelift_stack_options.enable_local_preview
+  enable_well_known_secret_masking = each.value.spacelift_stack_options.enable_well_known_secret_masking
+  labels                           = each.value.spacelift_stack_options.labels
+  project_root                     = each.value.spacelift_stack_options.project_root
+  protect_from_deletion            = each.value.spacelift_stack_options.protect_from_deletion
+  terraform_version                = each.value.spacelift_stack_options.terraform_version
+  terraform_workflow_tool          = each.value.spacelift_stack_options.terraform_workflow_tool
 
   branch           = module.github_repository[each.value.name].default_branch
   github_namespace = module.github_repository[each.value.name].namespace
