@@ -1,12 +1,12 @@
 data "spacelift_spaces" "this" {
-  count = var.spacelift_space_name != "root" ? 1 : 0
+  count = var.spacelift_space_name == "root" ? 0 : 1
 }
 
 locals {
-  active_spacelift_space_id = var.spacelift_space_name != "root" ? (
-    join("", [for k, v in data.spacelift_spaces.this[0] : v.id if v.name == var.spacelift_space_name])
-    ) : (
+  active_spacelift_space_id = var.spacelift_space_name == "root" ? (
     var.spacelift_space_name
+    ) : (
+    join("", [for k, v in data.spacelift_spaces.this[0].spaces : v.space_id if v.name == var.spacelift_space_name])
   )
 }
 
