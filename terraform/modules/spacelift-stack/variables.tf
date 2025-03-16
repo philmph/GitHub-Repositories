@@ -37,6 +37,7 @@ variable "name" {
 }
 
 variable "project_root" {
+  default     = null
   description = "The root directory of the project"
   type        = string
 }
@@ -48,7 +49,7 @@ variable "protect_from_deletion" {
 }
 
 variable "repository" {
-  description = "The GitHub to deploy from"
+  description = "The GitHub Repository to deploy from"
   type        = string
 }
 

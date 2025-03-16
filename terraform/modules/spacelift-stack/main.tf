@@ -32,10 +32,3 @@ resource "spacelift_stack" "this" {
     namespace = var.github_namespace
   }
 }
-
-# Steps?
-# Build spacelift-stack module until plan is ok
-## Create token / Add to TFE Workspace of GitHub-Repositories
-## Pin github_enterprise with my static values? Only allow github but dynamic id by data source in root?
-# Test with renovate-test repo
-#

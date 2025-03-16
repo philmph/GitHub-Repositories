@@ -44,6 +44,28 @@ module "tfe_workspace" {
   workspace_working_directory     = each.value.terraform_cloud_options.workspace_working_directory
 
   vcs_repo_identifier = module.github_repository[each.value.name].full_name
+}
 
-  depends_on = [module.github_repository]
+module "spacelift_stack" {
+  source = "./modules/spacelift-stack"
+
+  for_each = { for i, o in var.github_repositories : o.name => o if o.create_spacelift_stack }
+
+  # Negative of allow_delete required
+  protect_from_deletion = !var.allow_delete
+  spacelift_space_name  = var.spacelift_space_name
+
+  description = each.value.description
+  name        = each.value.name
+
+  autodeploy              = each.value.spacelift_stack_options.autodeploy
+  enable_local_preview    = each.value.spacelift_stack_options.enable_local_preview
+  labels                  = each.value.spacelift_stack_options.labels
+  project_root            = each.value.spacelift_stack_options.project_root
+  terraform_version       = each.value.spacelift_stack_options.terraform_version
+  terraform_workflow_tool = each.value.spacelift_stack_options.terraform_workflow_tool
+
+  branch           = module.github_repository[each.value.name].default_branch # TODO Check
+  github_namespace = module.github_repository[each.value.name].user           # TODO Check
+  repository       = module.github_repository[each.value.name].full_name      # TODO Check
 }
