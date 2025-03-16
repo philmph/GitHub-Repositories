@@ -89,7 +89,6 @@ variable "spacelift_github_integration_id" {
   default     = null
   description = "The ID of the GitHub integration to use for this stack. Defalults to the Default if not specified"
   type        = string
-  nullable    = false
 }
 
 variable "spacelift_space_name" {
