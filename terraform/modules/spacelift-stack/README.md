@@ -41,6 +41,7 @@ No modules.
 | <a name="input_repository"></a> [repository](#input\_repository) | The GitHub Repository to deploy from | `string` | n/a | yes |
 | <a name="input_spacelift_github_integration_id"></a> [spacelift\_github\_integration\_id](#input\_spacelift\_github\_integration\_id) | The ID of the GitHub integration to use for this stack. Defalults to the Default if not specified | `string` | `null` | no |
 | <a name="input_spacelift_space_name"></a> [spacelift\_space\_name](#input\_spacelift\_space\_name) | The name of the Space to deploy the Stack to. If not root, it ID will be queried based on the name provided | `string` | `"root"` | no |
+| <a name="input_terraform_smart_sanitization"></a> [terraform\_smart\_sanitization](#input\_terraform\_smart\_sanitization) | Whether to use smart sanitization (recommended) | `bool` | `true` | no |
 | <a name="input_terraform_version"></a> [terraform\_version](#input\_terraform\_version) | The version of Terraform to use | `string` | `"~> 1.9"` | no |
 | <a name="input_terraform_workflow_tool"></a> [terraform\_workflow\_tool](#input\_terraform\_workflow\_tool) | The Terraform workflow tool to use | `string` | `"OPEN_TOFU"` | no |
 
@@ -93,6 +94,7 @@ No modules.
 | <a name="input_repository"></a> [repository](#input\_repository) | The GitHub Repository to deploy from | `string` | n/a | yes |
 | <a name="input_spacelift_github_integration_id"></a> [spacelift\_github\_integration\_id](#input\_spacelift\_github\_integration\_id) | The ID of the GitHub integration to use for this stack. Defalults to the Default if not specified | `string` | `null` | no |
 | <a name="input_spacelift_space_name"></a> [spacelift\_space\_name](#input\_spacelift\_space\_name) | The name of the Space to deploy the Stack to. If not root, it ID will be queried based on the name provided | `string` | `"root"` | no |
+| <a name="input_terraform_smart_sanitization"></a> [terraform\_smart\_sanitization](#input\_terraform\_smart\_sanitization) | Whether to use smart sanitization (recommended) | `bool` | `true` | no |
 | <a name="input_terraform_version"></a> [terraform\_version](#input\_terraform\_version) | The version of Terraform to use | `string` | `"~> 1.9"` | no |
 | <a name="input_terraform_workflow_tool"></a> [terraform\_workflow\_tool](#input\_terraform\_workflow\_tool) | The Terraform workflow tool to use | `string` | `"OPEN_TOFU"` | no |
 
