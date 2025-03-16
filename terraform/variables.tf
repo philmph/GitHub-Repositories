@@ -43,6 +43,7 @@ variable "github_repositories" {
       autodeploy                       = optional(bool)
       enable_local_preview             = optional(bool)
       enable_well_known_secret_masking = optional(bool)
+      github_run_promotion             = optional(bool)
       labels                           = optional(set(string))
       project_root                     = optional(string)
       protect_from_deletion            = optional(bool)

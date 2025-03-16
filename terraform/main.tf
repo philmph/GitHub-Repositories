@@ -59,6 +59,7 @@ module "spacelift_stack" {
   autodeploy                       = each.value.spacelift_stack_options.autodeploy
   enable_local_preview             = each.value.spacelift_stack_options.enable_local_preview
   enable_well_known_secret_masking = each.value.spacelift_stack_options.enable_well_known_secret_masking
+  github_run_promotion             = each.value.spacelift_stack_options.github_run_promotion
   labels                           = each.value.spacelift_stack_options.labels
   project_root                     = each.value.spacelift_stack_options.project_root
   protect_from_deletion            = each.value.spacelift_stack_options.protect_from_deletion

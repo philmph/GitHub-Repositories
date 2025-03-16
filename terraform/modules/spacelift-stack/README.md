@@ -35,6 +35,7 @@ No modules.
 | <a name="input_enable_local_preview"></a> [enable\_local\_preview](#input\_enable\_local\_preview) | Whether to enable local preview | `bool` | `false` | no |
 | <a name="input_enable_well_known_secret_masking"></a> [enable\_well\_known\_secret\_masking](#input\_enable\_well\_known\_secret\_masking) | Whether to enable well-known secret masking | `bool` | `true` | no |
 | <a name="input_github_namespace"></a> [github\_namespace](#input\_github\_namespace) | The GitHub organization / user the Repository belongs to | `string` | n/a | yes |
+| <a name="input_github_run_promotion"></a> [github\_run\_promotion](#input\_github\_run\_promotion) | Whether to allow build promotion using GitHub Actions | `bool` | `false` | no |
 | <a name="input_labels"></a> [labels](#input\_labels) | Labels to apply to the Stack | `set(string)` | `[]` | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of the Stack | `string` | n/a | yes |
 | <a name="input_project_root"></a> [project\_root](#input\_project\_root) | The root directory of the project | `string` | `null` | no |

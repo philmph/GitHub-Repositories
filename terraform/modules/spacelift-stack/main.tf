@@ -21,6 +21,7 @@ resource "spacelift_stack" "this" {
   description                      = var.description
   enable_local_preview             = var.enable_local_preview
   enable_well_known_secret_masking = var.enable_well_known_secret_masking
+  github_action_deploy             = var.github_run_promotion
   labels                           = var.labels
   project_root                     = var.project_root
   protect_from_deletion            = var.protect_from_deletion
