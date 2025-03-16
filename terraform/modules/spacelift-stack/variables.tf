@@ -34,6 +34,13 @@ variable "github_namespace" {
   type        = string
 }
 
+variable "github_run_promotion" {
+  default     = false
+  description = "Whether to allow build promotion using GitHub Actions"
+  type        = bool
+  nullable    = false
+}
+
 variable "labels" {
   default     = []
   description = "Labels to apply to the Stack"
