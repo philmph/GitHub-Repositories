@@ -23,6 +23,7 @@ No modules.
 | Name | Type |
 |------|------|
 | [spacelift_stack.this](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/stack) | resource |
+| [spacelift_spaces.this](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/data-sources/spaces) | data source |
 
 ## Inputs
 
