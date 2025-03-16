@@ -114,8 +114,9 @@ github_repositories = [
     create_spacelift_stack = true
 
     spacelift_stack_options = {
-      project_root          = "tests/terraform"
-      protect_from_deletion = false
+      enable_well_known_secret_masking = true
+      project_root                     = "tests/terraform"
+      protect_from_deletion            = false
     }
   },
 
