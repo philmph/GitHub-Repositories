@@ -20,6 +20,12 @@ variable "enable_local_preview" {
   type        = bool
 }
 
+variable "enable_well_known_secret_masking" {
+  default     = true
+  description = "Whether to enable well-known secret masking"
+  type        = bool
+}
+
 variable "github_namespace" {
   description = "The GitHub organization / user the Repository belongs to"
   type        = string

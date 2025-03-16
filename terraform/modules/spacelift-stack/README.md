@@ -33,6 +33,7 @@ No modules.
 | <a name="input_branch"></a> [branch](#input\_branch) | The branch to deploy from | `string` | n/a | yes |
 | <a name="input_description"></a> [description](#input\_description) | A description of the Stack | `string` | n/a | yes |
 | <a name="input_enable_local_preview"></a> [enable\_local\_preview](#input\_enable\_local\_preview) | Whether to enable local preview | `bool` | `false` | no |
+| <a name="input_enable_well_known_secret_masking"></a> [enable\_well\_known\_secret\_masking](#input\_enable\_well\_known\_secret\_masking) | Whether to enable well-known secret masking | `bool` | `true` | no |
 | <a name="input_github_namespace"></a> [github\_namespace](#input\_github\_namespace) | The GitHub organization / user the Repository belongs to | `string` | n/a | yes |
 | <a name="input_labels"></a> [labels](#input\_labels) | Labels to apply to the Stack | `set(string)` | `[]` | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of the Stack | `string` | n/a | yes |
@@ -86,6 +87,7 @@ No modules.
 | <a name="input_branch"></a> [branch](#input\_branch) | The branch to deploy from | `string` | n/a | yes |
 | <a name="input_description"></a> [description](#input\_description) | A description of the Stack | `string` | n/a | yes |
 | <a name="input_enable_local_preview"></a> [enable\_local\_preview](#input\_enable\_local\_preview) | Whether to enable local preview | `bool` | `false` | no |
+| <a name="input_enable_well_known_secret_masking"></a> [enable\_well\_known\_secret\_masking](#input\_enable\_well\_known\_secret\_masking) | Whether to enable well-known secret masking | `bool` | `true` | no |
 | <a name="input_github_namespace"></a> [github\_namespace](#input\_github\_namespace) | The GitHub organization / user the Repository belongs to | `string` | n/a | yes |
 | <a name="input_labels"></a> [labels](#input\_labels) | Labels to apply to the Stack | `set(string)` | `[]` | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of the Stack | `string` | n/a | yes |
