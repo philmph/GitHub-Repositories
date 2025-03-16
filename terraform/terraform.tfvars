@@ -100,23 +100,6 @@ github_repositories = [
     description = "Repository to test my Renovate Bot configuration."
     visibility  = "public"
     archived    = false
-
-    create_terraform_cloud_workspace = true
-
-    terraform_cloud_options = {
-      enable_vcs_workflow         = true
-      allow_workspace_deletion    = true
-      workspace_auto_apply        = true
-      workspace_execution_mode    = "remote"
-      workspace_working_directory = "tests/terraform"
-    }
-
-    create_spacelift_stack = true
-
-    spacelift_stack_options = {
-      project_root          = "tests/terraform"
-      protect_from_deletion = false
-    }
   },
 
   {
