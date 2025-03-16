@@ -1,8 +1,8 @@
-variable "allow_delete" {
-  description = "Allow deletion of resources"
-  type        = bool
-  default     = false
-}
+# variable "allow_delete" {
+#   description = "Allow deletion of resources"
+#   type        = bool
+#   default     = false
+# }
 
 variable "github_repositories" {
   description = "A list of GitHub repositories to create"
@@ -27,12 +27,26 @@ variable "github_repositories" {
     create_terraform_cloud_workspace = optional(bool, false)
 
     terraform_cloud_options = optional(object({
+      allow_workspace_deletion        = optional(bool)
       enable_vcs_workflow             = optional(bool)
       workspace_auto_apply            = optional(bool)
       workspace_execution_mode        = optional(string)
       workspace_file_triggers_enabled = optional(bool)
       workspace_trigger_patterns      = optional(list(string))
       workspace_working_directory     = optional(string)
+      }), {}
+    )
+
+    create_spacelift_stack = optional(bool, false)
+
+    spacelift_stack_options = optional(object({
+      autodeploy              = optional(bool)
+      enable_local_preview    = optional(bool)
+      labels                  = optional(set(string))
+      project_root            = optional(string)
+      protect_from_deletion   = optional(bool)
+      terraform_version       = optional(string)
+      terraform_workflow_tool = optional(string)
       }), {}
     )
   }))
@@ -42,6 +56,27 @@ variable "github_token" {
   description = "GitHub token for authentication"
   type        = string
   sensitive   = true
+}
+variable "spacelift_space_name" {
+  default     = "root"
+  description = "The name of the Spacelift Space"
+  type        = string
+}
+
+variable "spacelift_endpoint_name" {
+  description = "Spacelift API endpoint name excluding .app.spacelift.io"
+  type        = string
+}
+
+variable "spacelift_key_id" {
+  description = "Spacelift API key ID"
+  type        = string
+}
+
+variable "spacelift_key_secret" {
+  description = "Spacelift API key secret"
+  sensitive   = true
+  type        = string
 }
 
 variable "tfe_oauth_service_provider" {

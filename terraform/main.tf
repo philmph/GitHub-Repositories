@@ -1,13 +1,3 @@
-data "tfe_project" "this" {
-  name         = var.tfe_project_name
-  organization = var.tfe_organization
-}
-
-data "tfe_oauth_client" "this" {
-  organization     = var.tfe_organization
-  service_provider = var.tfe_oauth_service_provider
-}
-
 module "github_repository" {
   source = "./modules/github-repository"
 
@@ -22,6 +12,16 @@ module "github_repository" {
   options = each.value.options
 }
 
+data "tfe_project" "this" {
+  name         = var.tfe_project_name
+  organization = var.tfe_organization
+}
+
+data "tfe_oauth_client" "this" {
+  organization     = var.tfe_organization
+  service_provider = var.tfe_oauth_service_provider
+}
+
 module "tfe_workspace" {
   source = "./modules/tfe-workspace"
 
@@ -30,13 +30,13 @@ module "tfe_workspace" {
   tfe_project_id     = data.tfe_project.this.id
   tfe_oauth_token_id = data.tfe_oauth_client.this.oauth_token_id
 
-  allow_workspace_deletion = var.allow_delete
-  tfe_organization         = var.tfe_organization
+  tfe_organization = var.tfe_organization
 
   workspace_description = each.value.description
   workspace_name        = each.value.name
 
   enable_vcs_workflow             = each.value.terraform_cloud_options.enable_vcs_workflow
+  allow_workspace_deletion        = each.value.terraform_cloud_options.allow_workspace_deletion
   workspace_auto_apply            = each.value.terraform_cloud_options.workspace_auto_apply
   workspace_execution_mode        = each.value.terraform_cloud_options.workspace_execution_mode
   workspace_file_triggers_enabled = each.value.terraform_cloud_options.workspace_file_triggers_enabled
@@ -44,6 +44,27 @@ module "tfe_workspace" {
   workspace_working_directory     = each.value.terraform_cloud_options.workspace_working_directory
 
   vcs_repo_identifier = module.github_repository[each.value.name].full_name
+}
 
-  depends_on = [module.github_repository]
+module "spacelift_stack" {
+  source = "./modules/spacelift-stack"
+
+  for_each = { for i, o in var.github_repositories : o.name => o if o.create_spacelift_stack }
+
+  spacelift_space_name = var.spacelift_space_name
+
+  description = each.value.description
+  name        = each.value.name
+
+  autodeploy              = each.value.spacelift_stack_options.autodeploy
+  enable_local_preview    = each.value.spacelift_stack_options.enable_local_preview
+  labels                  = each.value.spacelift_stack_options.labels
+  project_root            = each.value.spacelift_stack_options.project_root
+  protect_from_deletion   = each.value.spacelift_stack_options.protect_from_deletion
+  terraform_version       = each.value.spacelift_stack_options.terraform_version
+  terraform_workflow_tool = each.value.spacelift_stack_options.terraform_workflow_tool
+
+  branch           = module.github_repository[each.value.name].default_branch
+  github_namespace = module.github_repository[each.value.name].namespace
+  repository       = module.github_repository[each.value.name].name
 }
