@@ -60,7 +60,7 @@ variable "terraform_version" {
 }
 
 variable "terraform_workflow_tool" {
-  default     = "OpenTofu"
+  default     = "OPEN_TOFU"
   description = "The Terraform workflow tool to use"
   type        = string
 }
