@@ -39,8 +39,11 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_default_branch"></a> [default\_branch](#output\_default\_branch) | The default branch of the GitHub repository |
 | <a name="output_full_name"></a> [full\_name](#output\_full\_name) | The full name of the GitHub repository |
 | <a name="output_http_clone_url"></a> [http\_clone\_url](#output\_http\_clone\_url) | The HTTP clone URL of the GitHub repository |
+| <a name="output_name"></a> [name](#output\_name) | The name of the GitHub repository |
+| <a name="output_namespace"></a> [namespace](#output\_namespace) | The GitHub organization / user the Repository belongs to |
 | <a name="output_repo_id"></a> [repo\_id](#output\_repo\_id) | The ID of the GitHub repository |
 <!-- END_TF_DOCS -->
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

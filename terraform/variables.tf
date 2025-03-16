@@ -1,8 +1,8 @@
-variable "allow_delete" {
-  description = "Allow deletion of resources"
-  type        = bool
-  default     = false
-}
+# variable "allow_delete" {
+#   description = "Allow deletion of resources"
+#   type        = bool
+#   default     = false
+# }
 
 variable "github_repositories" {
   description = "A list of GitHub repositories to create"
@@ -27,6 +27,7 @@ variable "github_repositories" {
     create_terraform_cloud_workspace = optional(bool, false)
 
     terraform_cloud_options = optional(object({
+      allow_workspace_deletion        = optional(bool)
       enable_vcs_workflow             = optional(bool)
       workspace_auto_apply            = optional(bool)
       workspace_execution_mode        = optional(string)
@@ -43,6 +44,7 @@ variable "github_repositories" {
       enable_local_preview    = optional(bool)
       labels                  = optional(set(string))
       project_root            = optional(string)
+      protect_from_deletion   = optional(bool)
       terraform_version       = optional(string)
       terraform_workflow_tool = optional(string)
       }), {}
