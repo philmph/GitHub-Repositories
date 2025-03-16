@@ -64,7 +64,7 @@ module "spacelift_stack" {
   terraform_version       = each.value.spacelift_stack_options.terraform_version
   terraform_workflow_tool = each.value.spacelift_stack_options.terraform_workflow_tool
 
-  branch           = module.github_repository[each.value.name].default_branch # TODO Check
-  github_namespace = module.github_repository[each.value.name].user           # TODO Check
-  repository       = module.github_repository[each.value.name].full_name      # TODO Check
+  branch           = module.github_repository[each.value.name].default_branch
+  github_namespace = module.github_repository[each.value.name].namespace
+  repository       = module.github_repository[each.value.name].name
 }
