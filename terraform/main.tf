@@ -1,13 +1,3 @@
-data "tfe_project" "this" {
-  name         = var.tfe_project_name
-  organization = var.tfe_organization
-}
-
-data "tfe_oauth_client" "this" {
-  organization     = var.tfe_organization
-  service_provider = var.tfe_oauth_service_provider
-}
-
 module "github_repository" {
   source = "./modules/github-repository"
 
@@ -20,6 +10,16 @@ module "github_repository" {
   visibility             = each.value.visibility
 
   options = each.value.options
+}
+
+data "tfe_project" "this" {
+  name         = var.tfe_project_name
+  organization = var.tfe_organization
+}
+
+data "tfe_oauth_client" "this" {
+  organization     = var.tfe_organization
+  service_provider = var.tfe_oauth_service_provider
 }
 
 module "tfe_workspace" {
