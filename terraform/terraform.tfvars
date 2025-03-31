@@ -15,7 +15,7 @@ github_repositories = [
 
   {
     name        = "Cloudflare"
-    description = "I use this Repository to manage my Domain in Cloudflare."
+    description = "I use this Repository to manage my Domain in Cloudflare using Spacelift."
     visibility  = "public"
     archived    = false
 
@@ -79,6 +79,13 @@ github_repositories = [
     name       = "philmph"
     visibility = "public"
     archived   = false
+  },
+
+  {
+    name        = "philmph.github.io"
+    description = "Repository to host my GitHub pages used for my future Blog"
+    visibility  = "public"
+    archived    = false
   },
 
   {
