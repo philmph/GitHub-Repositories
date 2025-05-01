@@ -16,6 +16,11 @@ resource "github_repository" "this" {
   has_wiki           = var.options.has_wiki
   has_downloads      = var.options.has_downloads
   license_template   = var.options.license_template
+
+  # Pages is managed via Portal Click-Ops
+  lifecycle {
+    ignore_changes = [pages]
+  }
 }
 
 resource "github_branch" "this" {

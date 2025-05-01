@@ -32,6 +32,24 @@ github_repositories = [
   },
 
   {
+    name        = "Cloudflare-Data"
+    description = "Used to version control my DNS zone file."
+    visibility  = "private"
+    archived    = false
+
+    options = {
+      gitignore_template = "Terraform"
+    }
+
+    create_spacelift_stack = true
+
+    spacelift_stack_options = {
+      enable_local_preview = true
+      project_root         = "terraform/"
+    }
+  },
+
+  {
     name        = "Frame"
     description = "The idea of Frame is to standardize the scaffolding process of PowerShell Projects and ScriptModules."
     visibility  = "public"
