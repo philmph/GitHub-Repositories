@@ -26,6 +26,7 @@ github_repositories = [
     create_spacelift_stack = true
 
     spacelift_stack_options = {
+      autodeploy           = true
       enable_local_preview = true
       project_root         = "terraform/"
     }
@@ -44,6 +45,7 @@ github_repositories = [
     create_spacelift_stack = true
 
     spacelift_stack_options = {
+      autodeploy           = true
       enable_local_preview = true
       project_root         = "terraform/"
     }
