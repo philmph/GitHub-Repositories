@@ -14,6 +14,17 @@ github_repositories = [
   },
 
   {
+    name        = "Blog-Resources"
+    description = "This Repository is used to store the code samples used in my blog."
+    visibility  = "public"
+    archived    = false
+
+    options = {
+      gitignore_template = "Terraform"
+    }
+  },
+
+  {
     name        = "Cloudflare"
     description = "I use this Repository to manage my Domain in Cloudflare using Spacelift."
     visibility  = "public"
