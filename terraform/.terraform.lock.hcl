@@ -68,20 +68,20 @@ provider "registry.terraform.io/integrations/github" {
 }
 
 provider "registry.terraform.io/spacelift-io/spacelift" {
-  version     = "1.22.0"
-  constraints = ">= 1.20.3, 1.22.0, < 2.0.0"
+  version     = "1.24.0"
+  constraints = ">= 1.20.3, 1.24.0, < 2.0.0"
   hashes = [
-    "h1:aR6RZq1euqQgBzUvh3X8BQuh3d9XPFl7GH/G+1wF5SQ=",
-    "h1:dolcrAxr5kO2PMoB6hZAy3gbhU6UiCvz63oP/sDAFQU=",
-    "h1:iMO0h/TzGADn8ZSur8r37BW+na9BBL1oJShLHMooE9s=",
-    "h1:lLB7FLjqjmdn/syxwyrdgHJCo9BRraPW7JYXC6vfhsM=",
-    "h1:pevghZmx46SjjWHGpDzQS/L9XmiZx/kh1PkeNPOjpN8=",
-    "h1:t1xm3bfAWhw/WZpd6jxZ6nabhEH2BeKmP+0wHR99GZk=",
-    "zh:23265fa829e8280edd2626133c94946dc130d1fff5f64752812f0d3f0387438a",
-    "zh:345daf1f860ceb137d294e674975008087c5995732b62ecc7083fa028545609e",
-    "zh:35d5145352da568d8e054e09aa3209017f20d36d9eba1029486f75232b3fba6c",
-    "zh:4cc8294ba2d104d829f189a669588a4e317335a95976fb944c1fd11e7ed7cfae",
-    "zh:830fab83b49873400d86b1a19b3ce49ccbd5021f7a56afed7f66be264124775a",
-    "zh:deb8200da4640c7eaa193f3804c8959e7f0d8ccf6c9c8e972f65ce570e95d285",
+    "h1:N4iLwuqoLds1CrW87SbDZIS2wWhPe7d1uen55RCO5I8=",
+    "h1:RKUN/FFlWWKhUwHk6F1AzqU1Zr/e4g7Bqt0O39IqUKI=",
+    "h1:ZJP6QsAKASkKclVxYQmQu2dQytKlBH3jdr04+VU2jWQ=",
+    "h1:kJoQPkWbqrg+X0lG2Oj4fPMaEhC68RGY8DqrdUZveQU=",
+    "h1:xlmPaqXg72/sPFYpyDrJ/VdJsIA7koucehJfxRGInJE=",
+    "h1:z4UpQUIeFzsYsB8ShhdDiNKoOJ7SIhwpTZpYj8ZmQgU=",
+    "zh:053a00cfabaec1829f7038b83718bf2bc1a9ac5b4a5126114c0562a1756c709a",
+    "zh:1ac112465547c0fb71cb6cb60ec34404db11affb4ca485db44d3f7c1f0e46667",
+    "zh:4a5be1558dda7efa3e215338206df084fe0622d2ef6cc3c1885d12dfdefe020b",
+    "zh:7a47c037874138886ef9c8da15593fdabf557d81657e4762a4202a2545bb448f",
+    "zh:fdd1caa4a24092fd804cf47145b553f235f17ddb527c558614e023c6141938a6",
+    "zh:fdd7dd5fd3d24b519e88d342ef19aa633a68ff6ab215c62dc5afaef1b9eb6b3e",
   ]
 }
