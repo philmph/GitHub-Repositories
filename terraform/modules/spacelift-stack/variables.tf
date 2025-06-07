@@ -94,7 +94,7 @@ variable "terraform_workflow_tool" {
 
 variable "spacelift_github_integration_id" {
   default     = null
-  description = "The ID of the GitHub integration to use for this stack. Defalults to the Default if not specified"
+  description = "The ID of the GitHub integration to use for this stack. Defaults to the Default Integration if not specified"
   type        = string
 }
 
