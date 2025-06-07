@@ -47,6 +47,7 @@ variable "github_repositories" {
       labels                           = optional(set(string))
       project_root                     = optional(string)
       protect_from_deletion            = optional(bool)
+      space_name                       = optional(string)
       terraform_version                = optional(string)
       terraform_workflow_tool          = optional(string)
       }), {}
@@ -58,11 +59,6 @@ variable "github_token" {
   description = "GitHub token for authentication"
   type        = string
   sensitive   = true
-}
-variable "spacelift_space_name" {
-  default     = "root"
-  description = "The name of the Spacelift Space"
-  type        = string
 }
 
 variable "spacelift_endpoint_name" {
