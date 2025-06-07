@@ -71,6 +71,19 @@ variable "repository" {
   type        = string
 }
 
+variable "spacelift_github_integration_id" {
+  default     = null
+  description = "The ID of the GitHub integration to use for this stack. Defaults to the Default Integration if not specified"
+  type        = string
+}
+
+variable "spacelift_space_name" {
+  default     = "root"
+  description = "The name of the Space to deploy the Stack to. If not root, it ID will be queried based on the name provided"
+  type        = string
+  nullable    = false
+}
+
 variable "terraform_smart_sanitization" {
   default     = true
   description = "Whether to use smart sanitization (recommended)"
@@ -88,19 +101,6 @@ variable "terraform_version" {
 variable "terraform_workflow_tool" {
   default     = "OPEN_TOFU"
   description = "The Terraform workflow tool to use"
-  type        = string
-  nullable    = false
-}
-
-variable "spacelift_github_integration_id" {
-  default     = null
-  description = "The ID of the GitHub integration to use for this stack. Defaults to the Default Integration if not specified"
-  type        = string
-}
-
-variable "spacelift_space_name" {
-  default     = "root"
-  description = "The name of the Space to deploy the Stack to. If not root, it ID will be queried based on the name provided"
   type        = string
   nullable    = false
 }

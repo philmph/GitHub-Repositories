@@ -47,7 +47,7 @@ variable "github_repositories" {
       labels                           = optional(set(string))
       project_root                     = optional(string)
       protect_from_deletion            = optional(bool)
-      space_name                       = optional(string)
+      spacelift_space_name             = optional(string)
       terraform_version                = optional(string)
       terraform_workflow_tool          = optional(string)
       }), {}

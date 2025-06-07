@@ -62,7 +62,7 @@ module "spacelift_stack" {
   labels                           = each.value.spacelift_stack_options.labels
   project_root                     = each.value.spacelift_stack_options.project_root
   protect_from_deletion            = each.value.spacelift_stack_options.protect_from_deletion
-  spacelift_space_name             = each.value.spacelift_stack_options.space_name
+  spacelift_space_name             = each.value.spacelift_stack_options.spacelift_space_name
   terraform_version                = each.value.spacelift_stack_options.terraform_version
   terraform_workflow_tool          = each.value.spacelift_stack_options.terraform_workflow_tool
 

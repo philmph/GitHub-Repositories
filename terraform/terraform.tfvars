@@ -40,7 +40,7 @@ github_repositories = [
       autodeploy           = true
       enable_local_preview = true
       project_root         = "terraform/"
-      space_name           = "default"
+      spacelift_space_name = "default"
     }
   },
 
@@ -60,7 +60,7 @@ github_repositories = [
       autodeploy           = true
       enable_local_preview = true
       project_root         = "terraform/"
-      space_name           = "default"
+      spacelift_space_name = "default"
     }
   },
 
