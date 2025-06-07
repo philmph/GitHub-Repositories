@@ -1,6 +1,6 @@
-variable "autodeploy" {
+variable "administrative" {
   default     = false
-  description = "Whether to automatically deploy changes"
+  description = "Whether the Module is administrative"
   type        = bool
   nullable    = false
 }
@@ -11,7 +11,7 @@ variable "branch" {
 }
 
 variable "description" {
-  description = "A description of the Stack"
+  description = "A description of the Module"
   type        = string
 }
 
@@ -22,35 +22,16 @@ variable "enable_local_preview" {
   nullable    = false
 }
 
-variable "enable_well_known_secret_masking" {
-  default     = true
-  description = "Whether to enable well-known secret masking"
-  type        = bool
-  nullable    = false
-}
-
 variable "github_namespace" {
   description = "The GitHub organization / user the Repository belongs to"
   type        = string
 }
 
-variable "github_run_promotion" {
-  default     = false
-  description = "Whether to allow build promotion using GitHub Actions"
-  type        = bool
-  nullable    = false
-}
-
 variable "labels" {
   default     = []
-  description = "Labels to apply to the Stack"
+  description = "Labels to apply to the Module"
   type        = set(string)
   nullable    = false
-}
-
-variable "name" {
-  description = "The name of the Stack"
-  type        = string
 }
 
 variable "project_root" {
@@ -61,7 +42,14 @@ variable "project_root" {
 
 variable "protect_from_deletion" {
   default     = true
-  description = "Whether to protect the Stack from deletion"
+  description = "Whether to protect the Module from deletion"
+  type        = bool
+  nullable    = false
+}
+
+variable "public" {
+  default     = false
+  description = "Whether the Module is public"
   type        = bool
   nullable    = false
 }
@@ -73,27 +61,13 @@ variable "repository" {
 
 variable "spacelift_github_integration_id" {
   default     = null
-  description = "The ID of the GitHub integration to use for this stack. Defaults to the Default Integration if not specified"
+  description = "The ID of the GitHub integration to use for this module. Defaults to the Default Integration if not specified"
   type        = string
 }
 
 variable "spacelift_space_name" {
   default     = "root"
-  description = "The name of the Space to deploy the Stack to. If not root, it ID will be queried based on the name provided"
-  type        = string
-  nullable    = false
-}
-
-variable "terraform_smart_sanitization" {
-  default     = true
-  description = "Whether to use smart sanitization (recommended)"
-  type        = bool
-  nullable    = false
-}
-
-variable "terraform_version" {
-  default     = "~> 1.9"
-  description = "The version of Terraform to use"
+  description = "The name of the Space to deploy the Module to. If not root, it ID will be queried based on the name provided"
   type        = string
   nullable    = false
 }

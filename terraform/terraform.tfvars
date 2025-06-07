@@ -40,6 +40,7 @@ github_repositories = [
       autodeploy           = true
       enable_local_preview = true
       project_root         = "terraform/"
+      spacelift_space_name = "default"
     }
   },
 
@@ -59,6 +60,7 @@ github_repositories = [
       autodeploy           = true
       enable_local_preview = true
       project_root         = "terraform/"
+      spacelift_space_name = "default"
     }
   },
 
@@ -162,6 +164,25 @@ github_repositories = [
 
     options = {
       gitignore_template = "Terraform"
+    }
+  },
+
+  {
+    name        = "terraform-spacelift-stack"
+    description = "A test module which creates a Spacelift Stack and lives in my Spacelift account."
+    visibility  = "public"
+    archived    = false
+
+    options = {
+      gitignore_template = "Terraform"
+    }
+
+    create_spacelift_module = true
+
+    spacelift_module_options = {
+      enable_local_preview = true
+      project_root         = "src"
+      spacelift_space_name = "modules"
     }
   },
 
