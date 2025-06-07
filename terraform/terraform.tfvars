@@ -168,6 +168,25 @@ github_repositories = [
   },
 
   {
+    name        = "terraform-spacelift-stack"
+    description = "A test module which creates a Spacelift Stack and lives in my Spacelift account."
+    visibility  = "public"
+    archived    = false
+
+    options = {
+      gitignore_template = "Terraform"
+    }
+
+    create_spacelift_module = true
+
+    spacelift_module_options = {
+      enable_local_preview = true
+      project_root         = "src"
+      spacelift_space_name = "modules"
+    }
+  },
+
+  {
     name        = "Vienna-HUG-MeetUp-Sep-2024"
     description = "Repository to store the code samples for my Vienna HUG MeetUp talk in September 2024."
     visibility  = "public"

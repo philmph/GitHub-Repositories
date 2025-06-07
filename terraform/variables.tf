@@ -52,6 +52,21 @@ variable "github_repositories" {
       terraform_workflow_tool          = optional(string)
       }), {}
     )
+
+    create_spacelift_module = optional(bool, false)
+
+    spacelift_module_options = optional(object({
+      administrative          = optional(bool)
+      branch                  = optional(string)
+      enable_local_preview    = optional(bool)
+      labels                  = optional(set(string))
+      project_root            = optional(string)
+      protect_from_deletion   = optional(bool)
+      public                  = optional(bool)
+      spacelift_space_name    = optional(string)
+      terraform_workflow_tool = optional(string)
+      }), {}
+    )
   }))
 }
 
