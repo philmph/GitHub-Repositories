@@ -182,6 +182,7 @@ github_repositories = [
     spacelift_module_options = {
       enable_local_preview = true
       project_root         = "src"
+      public               = true
       spacelift_space_name = "modules"
     }
   },
