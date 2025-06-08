@@ -20,7 +20,7 @@
 |------|--------|---------|
 | <a name="module_github_repository"></a> [github\_repository](#module\_github\_repository) | ./modules/github-repository | n/a |
 | <a name="module_spacelift_module"></a> [spacelift\_module](#module\_spacelift\_module) | ./modules/spacelift-module | n/a |
-| <a name="module_spacelift_stack"></a> [spacelift\_stack](#module\_spacelift\_stack) | ./modules/spacelift-stack | n/a |
+| <a name="module_spacelift_stack"></a> [spacelift\_stack](#module\_spacelift\_stack) | spacelift.io/philmph/stack/spacelift | 0.1.0 |
 | <a name="module_tfe_workspace"></a> [tfe\_workspace](#module\_tfe\_workspace) | ./modules/tfe-workspace | n/a |
 
 ## Resources
@@ -74,7 +74,7 @@
 |------|--------|---------|
 | <a name="module_github_repository"></a> [github\_repository](#module\_github\_repository) | ./modules/github-repository | n/a |
 | <a name="module_spacelift_module"></a> [spacelift\_module](#module\_spacelift\_module) | ./modules/spacelift-module | n/a |
-| <a name="module_spacelift_stack"></a> [spacelift\_stack](#module\_spacelift\_stack) | ./modules/spacelift-stack | n/a |
+| <a name="module_spacelift_stack"></a> [spacelift\_stack](#module\_spacelift\_stack) | spacelift.io/philmph/stack/spacelift | 0.1.0 |
 | <a name="module_tfe_workspace"></a> [tfe\_workspace](#module\_tfe\_workspace) | ./modules/tfe-workspace | n/a |
 
 ## Resources

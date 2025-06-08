@@ -47,7 +47,9 @@ module "tfe_workspace" {
 }
 
 module "spacelift_stack" {
-  source = "./modules/spacelift-stack"
+  # source = "./modules/spacelift-stack"
+  source  = "spacelift.io/philmph/stack/spacelift"
+  version = "0.1.0"
 
   for_each = { for i, o in var.github_repositories : o.name => o if o.create_spacelift_stack }
 
