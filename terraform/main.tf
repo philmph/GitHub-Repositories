@@ -47,7 +47,7 @@ module "tfe_workspace" {
 }
 
 module "spacelift_stack" {
-  # source = "./modules/spacelift-stack"
+  # https://github.com/philmph/terraform-spacelift-stack
   source  = "spacelift.io/philmph/stack/spacelift"
   version = "0.1.0"
 
