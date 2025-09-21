@@ -4,6 +4,7 @@
 
   "packageRules": [
     {
+      "automerge": true,
       "groupName": "Terraform minor and patch group",
       "labels": ["terraform-minor-patch"],
       "matchManagers": ["terraform"],
