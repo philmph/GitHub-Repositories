@@ -65,6 +65,25 @@ github_repositories = [
   },
 
   {
+    name        = "Dogdoption"
+    description = "A simple web application to start with dogdoption.com."
+    visibility  = "private"
+
+    options = {
+      gitignore_template = "Terraform"
+    }
+
+    create_spacelift_stack = true
+
+    spacelift_stack_options = {
+      autodeploy           = true
+      enable_local_preview = true
+      project_root         = "terraform/"
+      spacelift_space_name = "default"
+    }
+  },
+
+  {
     name        = "Frame"
     description = "The idea of Frame is to standardize the scaffolding process of PowerShell Projects and ScriptModules."
     visibility  = "public"
