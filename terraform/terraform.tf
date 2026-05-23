@@ -4,17 +4,17 @@ terraform {
   required_providers {
     github = {
       source  = "integrations/github"
-      version = "6.11.1"
+      version = "6.12.1"
     }
 
     spacelift = {
       source  = "spacelift-io/spacelift"
-      version = "1.45.0"
+      version = "1.49.0"
     }
 
     tfe = {
       source  = "hashicorp/tfe"
-      version = "0.74.1"
+      version = "0.77.0"
     }
   }
 }
