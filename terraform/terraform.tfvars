@@ -197,4 +197,15 @@ github_repositories = [
       gitignore_template = "Terraform"
     }
   },
+
+  {
+    name        = "Vienna-PE-CNA-MeetUp-May-2026"
+    description = "Repository to store the code samples for my Vienna Platform Engineerung & Cloud Native Austria MeetUp talk in May 2026."
+    visibility  = "public"
+    archived    = false
+
+    options = {
+      gitignore_template = "Terraform"
+    }
+  },
 ]
