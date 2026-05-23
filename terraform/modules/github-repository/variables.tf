@@ -43,7 +43,6 @@ variable "options" {
     has_discussions    = optional(bool, false)
     has_projects       = optional(bool, false)
     has_wiki           = optional(bool, false)
-    has_downloads      = optional(bool, false)
     license_template   = optional(string, "mit")
   })
 
@@ -53,7 +52,6 @@ variable "options" {
     has_discussions    = false
     has_projects       = false
     has_wiki           = false
-    has_downloads      = false
     license_template   = "mit"
   }
 

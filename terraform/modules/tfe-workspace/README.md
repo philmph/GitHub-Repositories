@@ -2,14 +2,14 @@
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5, < 2.0 |
 | <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | >= 0.54.0, < 1.0.0 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_tfe"></a> [tfe](#provider\_tfe) | >= 0.54.0, < 1.0.0 |
 
 ## Modules
@@ -19,14 +19,14 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [tfe_workspace.this](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/workspace) | resource |
 | [tfe_workspace_settings.this](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/workspace_settings) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_allow_workspace_deletion"></a> [allow\_workspace\_deletion](#input\_allow\_workspace\_deletion) | Allow deletion of the TFE workspace | `bool` | `false` | no |
 | <a name="input_enable_vcs_workflow"></a> [enable\_vcs\_workflow](#input\_enable\_vcs\_workflow) | Enable VCS workflow for the TFE workspace | `bool` | `false` | no |
 | <a name="input_tfe_oauth_token_id"></a> [tfe\_oauth\_token\_id](#input\_tfe\_oauth\_token\_id) | ID of the TFE OAuth token | `string` | n/a | yes |
@@ -44,7 +44,7 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_html_url"></a> [html\_url](#output\_html\_url) | The HTML URL of the TFE workspace |
 | <a name="output_id"></a> [id](#output\_id) | The ID of the TFE workspace |
 <!-- END_TF_DOCS -->
