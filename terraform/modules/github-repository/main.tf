@@ -14,7 +14,6 @@ resource "github_repository" "this" {
   has_discussions    = var.options.has_discussions
   has_projects       = var.options.has_projects
   has_wiki           = var.options.has_wiki
-  has_downloads      = var.options.has_downloads
   license_template   = var.options.license_template
 
   # Pages is managed via Portal Click-Ops

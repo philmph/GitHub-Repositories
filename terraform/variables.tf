@@ -19,7 +19,6 @@ variable "github_repositories" {
       has_discussions    = optional(bool)
       has_projects       = optional(bool)
       has_wiki           = optional(bool)
-      has_downloads      = optional(bool)
       license_template   = optional(string)
       }), {}
     )
