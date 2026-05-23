@@ -55,14 +55,14 @@ No modules.
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5, < 2.0 |
 | <a name="requirement_spacelift"></a> [spacelift](#requirement\_spacelift) | >= 1.20.3, < 2.0.0 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_spacelift"></a> [spacelift](#provider\_spacelift) | >= 1.20.3, < 2.0.0 |
 
 ## Modules
@@ -72,14 +72,14 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [spacelift_module.this](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/module) | resource |
 | [spacelift_spaces.this](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/data-sources/spaces) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_administrative"></a> [administrative](#input\_administrative) | Whether the Module is administrative | `bool` | `false` | no |
 | <a name="input_branch"></a> [branch](#input\_branch) | The branch to deploy from | `string` | n/a | yes |
 | <a name="input_description"></a> [description](#input\_description) | A description of the Module | `string` | n/a | yes |
@@ -97,7 +97,7 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_id"></a> [id](#output\_id) | The ID of the Spacelift Module |
 | <a name="output_name"></a> [name](#output\_name) | The name of the Spacelift Module |
 <!-- END_TF_DOCS -->
