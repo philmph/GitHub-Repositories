@@ -65,6 +65,13 @@ github_repositories = [
   },
 
   {
+    name        = "dotfiles"
+    description = "Used to store and version control my personal Mac configuration files with git."
+    visibility  = "private"
+    archived    = false
+  },
+
+  {
     name        = "Frame"
     description = "The idea of Frame is to standardize the scaffolding process of PowerShell Projects and ScriptModules."
     visibility  = "public"
