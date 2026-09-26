@@ -25,8 +25,6 @@ checks only.
 
 - **terraform-skill** is mandatory - invoke it before writing, reviewing, or debugging any `.tf`
   file, module, or state operation. Never author HCL without it
-- **pm-terraform-repo-scaffold** - use when onboarding or realigning this repo's tooling and CI to
-  the scaffold baseline
 
 ## Checks
 
@@ -94,13 +92,6 @@ resource "something" "this" {
 - Write tests before the implementation
 - `terraform test` passing is the definition of done - its output is the PR evidence
 - Never weaken, delete, or skip an assertion to make tests pass - if a test seems wrong, stop and ask
-
-## Commits
-
-- Conventional commits, short imperative-mood subject
-- Exactly one line
-- Lowercase after `:` - except identifiers and proper nouns, e.g. `fix: skip README drift check`
-- Examples: `docs: update README.md`, `refactor: remove functionality xyz`
 
 ## When X Changes
 
