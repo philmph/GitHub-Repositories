@@ -7,6 +7,17 @@ github_repositories = [
   },
 
   {
+    name        = "Atlantis-Test"
+    description = "Repository to test Atlantis Terraform pull request automation."
+    visibility  = "public"
+    archived    = false
+
+    options = {
+      gitignore_template = "Terraform"
+    }
+  },
+
+  {
     name        = "Builder"
     description = "Building a highly automated PowerShell sample module."
     visibility  = "private"
@@ -129,6 +140,13 @@ github_repositories = [
   },
 
   {
+    name        = "pmnet"
+    description = "Personal network and infrastructure configuration."
+    visibility  = "private"
+    archived    = false
+  },
+
+  {
     name        = "PowerShell-Common-Functions"
     description = "This repository is used to collect various different PowerShell classes and functions I've written over time."
     visibility  = "public"
@@ -152,6 +170,13 @@ github_repositories = [
   {
     name        = "Renovate-Bot-Test"
     description = "Repository to test my Renovate Bot configuration."
+    visibility  = "public"
+    archived    = false
+  },
+
+  {
+    name        = "Shared-Workflows"
+    description = "Reusable GitHub Actions workflows shared across my repositories."
     visibility  = "public"
     archived    = false
   },
