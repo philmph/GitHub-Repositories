@@ -1,3 +1,7 @@
+# Created by https://www.toptal.com/developers/gitignore/api/terraform
+# Edit at https://www.toptal.com/developers/gitignore?templates=terraform
+
+### Terraform ###
 # Local .terraform directories
 **/.terraform/*
 
@@ -34,5 +38,11 @@ override.tf.json
 .terraformrc
 terraform.rc
 
-# Custom additions
+# End of https://www.toptal.com/developers/gitignore/api/terraform
+
+### Custom Additions ###
+.DS_Store
 gitignored.tf
+
+### Work in progress ###
+.wip/

@@ -1,21 +1,16 @@
-# Docs: https://EditorConfig.org
+# EditorConfig is awesome: https://EditorConfig.org
 
-# Set to root config file
+# top-most EditorConfig file
 root = true
 
-# Baseline settings for all files
 [*]
 charset = utf-8
-end_of_line = lf
 indent_size = 2
 indent_style = space
-insert_final_newline = true
-max_line_length = 80
+end_of_line = lf
 trim_trailing_whitespace = true
+insert_final_newline = true
 
 [*.md]
-max_line_length = 0
+max_line_length = off
 trim_trailing_whitespace = false
-
-[COMMIT_EDITMSG]
-max_line_length = 0
