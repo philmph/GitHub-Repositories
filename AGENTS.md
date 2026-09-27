@@ -1,4 +1,4 @@
-# CLAUDE.md
+# AGENTS.md
 
 @.agent-conventions/terraform.md
 
@@ -9,5 +9,6 @@ Provisions GitHub repositories (`terraform/modules/github-repository`), Spacelif
 for philmph's personal GitHub account. Spacelift/TFE own plan and apply - GitHub Actions runs
 checks only.
 
-- Providers to mock in tests: `github`, `spacelift`, `tfe`
-- Do not create or update a CHANGELOG
+Will be migrated to self-hosted [Atlantis](https://runatlantis.io) replacing both Spacelift stacks and TFE workspaces.
+
+- Terraform providers to mock in tests: `github`, `spacelift`, `tfe`
