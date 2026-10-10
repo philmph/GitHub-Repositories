@@ -36,6 +36,13 @@ github_repositories = [
   },
 
   {
+    name        = "claude-plugins"
+    description = "Personal Claude Code plugin marketplace with my skills."
+    visibility  = "private"
+    archived    = false
+  },
+
+  {
     name        = "Cloudflare"
     description = "I use this Repository to manage my Domain in Cloudflare using Spacelift."
     visibility  = "public"
