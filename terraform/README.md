@@ -4,15 +4,15 @@
 | Name | Version |
 | ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5, < 2.0 |
-| <a name="requirement_github"></a> [github](#requirement\_github) | 6.11.1 |
-| <a name="requirement_spacelift"></a> [spacelift](#requirement\_spacelift) | 1.45.0 |
-| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | 0.74.1 |
+| <a name="requirement_github"></a> [github](#requirement\_github) | 6.13.0 |
+| <a name="requirement_spacelift"></a> [spacelift](#requirement\_spacelift) | 1.55.0 |
+| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | 0.81.0 |
 
 ## Providers
 
 | Name | Version |
 | ---- | ------- |
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.74.1 |
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.81.0 |
 
 ## Modules
 
@@ -27,8 +27,8 @@
 
 | Name | Type |
 | ---- | ---- |
-| [tfe_oauth_client.this](https://registry.terraform.io/providers/hashicorp/tfe/0.74.1/docs/data-sources/oauth_client) | data source |
-| [tfe_project.this](https://registry.terraform.io/providers/hashicorp/tfe/0.74.1/docs/data-sources/project) | data source |
+| [tfe_oauth_client.this](https://registry.terraform.io/providers/hashicorp/tfe/0.81.0/docs/data-sources/oauth_client) | data source |
+| [tfe_project.this](https://registry.terraform.io/providers/hashicorp/tfe/0.81.0/docs/data-sources/project) | data source |
 
 ## Inputs
 
@@ -39,10 +39,10 @@
 | <a name="input_spacelift_endpoint_name"></a> [spacelift\_endpoint\_name](#input\_spacelift\_endpoint\_name) | Spacelift API endpoint name excluding .app.spacelift.io | `string` | n/a | yes |
 | <a name="input_spacelift_key_id"></a> [spacelift\_key\_id](#input\_spacelift\_key\_id) | Spacelift API key ID | `string` | n/a | yes |
 | <a name="input_spacelift_key_secret"></a> [spacelift\_key\_secret](#input\_spacelift\_key\_secret) | Spacelift API key secret | `string` | n/a | yes |
-| <a name="input_tfe_oauth_service_provider"></a> [tfe\_oauth\_service\_provider](#input\_tfe\_oauth\_service\_provider) | OAuth service provider for Terraform Cloud | `string` | `"github"` | no |
 | <a name="input_tfe_organization"></a> [tfe\_organization](#input\_tfe\_organization) | Terraform Cloud organization | `string` | n/a | yes |
-| <a name="input_tfe_project_name"></a> [tfe\_project\_name](#input\_tfe\_project\_name) | Name of the Terraform Cloud project | `string` | `"Default Project"` | no |
 | <a name="input_tfe_token"></a> [tfe\_token](#input\_tfe\_token) | Terraform Cloud token for authentication. Required if create\_terraform\_cloud\_workspace is true | `string` | n/a | yes |
+| <a name="input_tfe_oauth_service_provider"></a> [tfe\_oauth\_service\_provider](#input\_tfe\_oauth\_service\_provider) | OAuth service provider for Terraform Cloud | `string` | `"github"` | no |
+| <a name="input_tfe_project_name"></a> [tfe\_project\_name](#input\_tfe\_project\_name) | Name of the Terraform Cloud project | `string` | `"Default Project"` | no |
 
 ## Outputs
 
@@ -52,7 +52,7 @@
 | <a name="output_module_spacelift_stack"></a> [module\_spacelift\_stack](#output\_module\_spacelift\_stack) | Spacelift Stack module output |
 | <a name="output_module_tfe_workspace"></a> [module\_tfe\_workspace](#output\_module\_tfe\_workspace) | Terraform Cloud Workspace module output |
 <!-- END_TF_DOCS -->
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -105,4 +105,4 @@
 | <a name="output_module_github_repository"></a> [module\_github\_repository](#output\_module\_github\_repository) | GitHub Repository module output |
 | <a name="output_module_spacelift_stack"></a> [module\_spacelift\_stack](#output\_module\_spacelift\_stack) | Spacelift Stack module output |
 | <a name="output_module_tfe_workspace"></a> [module\_tfe\_workspace](#output\_module\_tfe\_workspace) | Terraform Cloud Workspace module output |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
